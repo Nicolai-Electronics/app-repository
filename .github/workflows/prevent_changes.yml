@@ -1,0 +1,17 @@
+name: Prevent unwanted changes
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+    paths:
+      - '.github'
+      - '.gitignore'
+      - '.validator'
+
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: superbrothers/close-pull-request@v3
+        with:
+          comment: "This pull request has been closed automatically as we can not accept pull requests which modify the metadata validation part of the repository. Instead of creating a pull request for making changes to the the metadata schema or validator workflow we suggest creating an issue or contacting us directly to discuss any changes you wish to see made. Thank you."
