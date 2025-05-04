@@ -18,6 +18,9 @@ jobs:
             - name: Install dependencies
               working-directory: .validator
               run: npm install
+            - name: YES IT IS
+              working-directory: .validator
+              run: echo "YES IT IS"
             - name: Validate metadata
               working-directory: .validator
               run: bash validate.sh
