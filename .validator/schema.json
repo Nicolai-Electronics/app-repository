@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the application",
+      "maxLength": 128,
+      "minLength": 3,
+      "pattern": "^[A-Za-z0-9_\\- .!@#$%^&*()\\/\\\\]+$"
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the app",
+      "maxLength": 256,
+      "minLength": 0,
+      "pattern": "^[A-Za-z0-9_\\- .!@#$%^&*()\\/\\\\]+$"
+    },
+    "categories": {},
+    "version": {
+      "type": "integer",
+      "description": "Latest published package version",
+      "minimum": 1
+    },
+    "icon": {
+      "type": "object",
+      "properties": {
+        "16x16": {
+          "type": "string"
+        },
+        "32x32": {
+          "type": "string"
+        },
+        "64x64": {
+          "type": "string"
+        }
+      },
+      "minProperties": 1,
+      "additionalProperties": false
+    },
+    "author": {
+      "description": "Author of the app",
+      "type": "string"
+    },
+    "license": {
+      "description": "License of the app as SPDX license identifier",
+      "type": "string"
+    },
+    "application": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "executable": {
+            "type": "string"
+          },
+          "assets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "categories",
+    "version",
+    "icon",
+    "author",
+    "license",
+    "application"
+  ],
+  "additionalProperties": false
+}
