@@ -1,0 +1,23 @@
+name: Verify validity of metadata
+
+on:
+    pull_request:
+        types: [opened, reopened, synchronize]
+
+permissions:
+    contents: read
+
+jobs:
+    verify_metadata:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Install NodeJS
+              run: sudo apt-get install nodejs
+            - name: Install dependencies
+              working-directory: .validator
+              run: npm install
+            - name: Validate metadata
+              working-directory: .validator
+              run: bash validate.sh
