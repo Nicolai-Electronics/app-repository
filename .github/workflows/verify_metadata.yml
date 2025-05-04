@@ -14,10 +14,10 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Install NodeJS
-              run: sudo apt-get install node npm
+              run: sudo apt-get install nodejs
             - name: Install dependencies
               working-directory: .validator
               run: npm install
             - name: Validate metadata
               working-directory: .validator
-              run: bash validate.js
+              run: bash validate.sh
