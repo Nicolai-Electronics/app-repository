@@ -1,0 +1,21 @@
+{
+    "name": "Xtulator",
+    "description": "X86 emulator",
+    "categories": ["emulators"],
+    "version": 1,
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Nicolai Electronics",
+    "license": "GPLv2",
+    "application": [
+        {
+            "targets": ["tanmatsu", "konsool"],
+            "type": "appfs",
+            "executable": "xtulator-tanmatsu.bin",
+            "assets": []
+        }
+    ]
+}
