@@ -11,3 +11,5 @@ for dir in ../*; do
 done
 
 echo "All application metadata passes validation!"
+
+echo "HAHAHA "
