@@ -12,3 +12,5 @@ if (!valid) {
 }
 
 process.exit(0)
+
+CHANGED THE VALIDATOR
