@@ -1,0 +1,17 @@
+name: Build
+run-name: Build
+on: [push]
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: apps
+          path: |
+            *
+            !README.md
+            !.*

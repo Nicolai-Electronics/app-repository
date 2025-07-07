@@ -1,0 +1,39 @@
+name: Deploy
+run-name: Deploy
+on:
+  workflow_run:
+    branches: ['main']
+    workflows: [Build]
+    types:
+      - completed
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Install zip
+        run: sudo apt-get install zip
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - name: Deploy with Rsync
+        uses: SamKirkland/web-deploy@v1
+        with:
+          source-path: './apps/'
+          target-server: ${{ vars.HOST }}
+          ssh-port:      ${{ vars.SSH_PORT }}
+          remote-user:   ${{ vars.SSH_USER }}
+          private-ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          destination-path: ${{ vars.WEBROOT }}
+      - name: Execute remote SSH commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ vars.HOST }}
+          port: ${{ vars.SSH_PORT }}
+          username: ${{ vars.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: "sudo systemctl restart repository-server"
