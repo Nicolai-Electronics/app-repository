@@ -1,10 +1,10 @@
 {
-    "name": "Imagewag",
+    "name": "ImageWag",
     "description": "Image viewer",
     "categories": [
         "image viewer"
     ],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
