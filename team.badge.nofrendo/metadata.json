@@ -1,0 +1,27 @@
+{
+    "name": "Nofrendo NES emulator",
+    "description": "NES emulator for Tanmatsu",
+    "categories": [
+        "games"
+    ],
+    "version": "0.0.0",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Badge.Team",
+    "license_type": "GPLv2",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "type": "appfs",
+            "revision": 1,
+            "executable": "nofrendo.bin",
+            "assets": []
+        }
+    ]
+}
