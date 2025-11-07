@@ -1,0 +1,27 @@
+{
+    "name": "Ballz",
+    "description": "Ballz demo",
+    "categories": [
+        "demo"
+    ],
+    "version": "0.1.0",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Rene cavac Schickbauer",
+    "license_type": "MIT",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "revision": 1,
+            "type": "appfs",
+            "executable": "ballz-tanmatsu.bin",
+            "assets": []
+        }
+    ]
+}
