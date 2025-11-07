@@ -11,7 +11,7 @@
         "64x64": "icon64.png"
     },
     "author": "Rene cavac Schickbauer",
-    "license_type": "MIT",
+    "license_type": "CC0-1.0",
     "application": [
         {
             "targets": [
