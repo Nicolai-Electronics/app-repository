@@ -1,10 +1,10 @@
 {
-    "name": "Ballz",
-    "description": "Ballz demo in RGB888",
+    "name": "MusicalKeyboard",
+    "description": "Use the Tanmatsu as a 1 octave piano",
     "categories": [
         "demo"
     ],
-    "version": "1.1.0",
+    "version": "1.0.0",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -20,7 +20,7 @@
             ],
             "revision": 1,
             "type": "appfs",
-            "executable": "ballz-tanmatsu.bin",
+            "executable": "musicalkeyboard.bin",
             "assets": []
         }
     ]
