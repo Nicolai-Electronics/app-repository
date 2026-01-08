@@ -1,0 +1,26 @@
+{
+  "name": "WifiScanner",
+  "description": "2.4 GHz Wifi Scanner",
+  "categories": [
+    "tools"
+  ],
+  "version": "0.1.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Saarbastler",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "tanmatsu-wifi-scanner.bin",
+      "assets": []
+    }
+  ]
+}
