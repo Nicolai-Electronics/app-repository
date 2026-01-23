@@ -1,0 +1,27 @@
+{
+    "name": "Commodore 64 emulator",
+    "description": "C64 emulator based on T-HMI-C64",
+    "categories": [
+        "games"
+    ],
+    "version": "0.0.1",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Ranzbak",
+    "license_type": "GPLv3 or later",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "type": "appfs",
+            "revision": 1,
+            "executable": "c64.bin",
+            "assets": []
+        }
+    ]
+}
