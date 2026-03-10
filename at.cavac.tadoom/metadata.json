@@ -24,7 +24,11 @@
             "assets": [
                 {
                     "source_file": "doom1.wad",
-                    "target_file": "doom1.wad"
+                    "destination_file": "doom1.wad"
+                },
+                {
+                    "source_file": "prboom.wad",
+                    "destination_file": "prboom.wad"
                 }
             ]
 
