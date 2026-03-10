@@ -85,13 +85,13 @@
                 "source_file": {
                   "type": "string"
                 },
-                "destination_file": {
+                "target_file": {
                   "type": "string"
                 }
               },
               "required": [
                 "source_file",
-                "destination_file"
+                "target_file"
               ]
             }
           }

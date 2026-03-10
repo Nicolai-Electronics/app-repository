@@ -24,7 +24,7 @@
             "assets": [
                 {
                     "source_file": "doom1.wad",
-                    "destination_file": "doom1.wad"
+                    "target_file": "doom1.wad"
                 }
             ]
 
