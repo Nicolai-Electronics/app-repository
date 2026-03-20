@@ -1,10 +1,10 @@
 {
     "name": "Matter comms",
-    "description": "Commission and control Matter/Thread devices",
+    "description": "Commission and control Matter/Thread devices https://github.com/Z6543/tanmatsu-matter/",
     "categories": [
         "utils"
     ],
-    "version": "1.0.0",
+    "version": "1.0.4",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -18,7 +18,7 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 1,
+            "revision": 3,
             "type": "appfs",
             "executable": "matter.bin",
             "assets": []
