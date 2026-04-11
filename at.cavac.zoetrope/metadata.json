@@ -1,10 +1,10 @@
 {
-    "name": "Nuke-it",
-    "description": "SD Card Formatter",
+    "name": "Zoetrope",
+    "description": "H.264/MJPEG video player",
     "categories": [
-        "tools"
+        "multimedia"
     ],
-    "version": "1.5.0",
+    "version": "1.0.0",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -18,9 +18,9 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 2,
+            "revision": 1,
             "type": "appfs",
-            "executable": "nukeit-tanmatsu.bin",
+            "executable": "application.bin",
             "assets": []
         }
     ]
