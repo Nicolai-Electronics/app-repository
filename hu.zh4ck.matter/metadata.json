@@ -1,6 +1,6 @@
 {
     "name": "Matter comms",
-    "description": "Commission and control Matter/Thread devices https://github.com/Z6543/tanmatsu-matter/",
+    "description": "Commission and control Matter/Thread devices github.com/Z6543/tanmatsu-matter/",
     "categories": [
         "utils"
     ],
