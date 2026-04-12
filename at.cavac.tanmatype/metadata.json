@@ -4,7 +4,7 @@
     "categories": [
         "multimedia"
     ],
-    "version": "0.0.1",
+    "version": "1.1.0",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -21,7 +21,12 @@
             "revision": 1,
             "type": "appfs",
             "executable": "application.bin",
-            "assets": []
+            "assets": [
+                {
+                    "source_file": "tanmatype.jpg",
+                    "target_file": "tanmatype.jpg"
+                }
+            ]
         }
     ]
 }
