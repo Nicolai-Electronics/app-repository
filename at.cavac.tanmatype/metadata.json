@@ -4,7 +4,7 @@
     "categories": [
         "multimedia"
     ],
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -25,6 +25,10 @@
                 {
                     "source_file": "tanmatype.jpg",
                     "target_file": "tanmatype.jpg"
+                },
+                {
+                    "source_file": "esc.png",
+                    "target_file": "esc.png"
                 }
             ]
         }
