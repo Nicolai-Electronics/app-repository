@@ -18,7 +18,7 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 1,
+            "revision": 2,
             "type": "appfs",
             "executable": "application.bin",
             "assets": [
