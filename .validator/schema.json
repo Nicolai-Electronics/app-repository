@@ -94,6 +94,22 @@
                 "target_file"
               ]
             }
+          },
+          "external_only": {
+            "description": "When true, only allow installation onto external storage media (not internal memory)",
+            "type": "boolean"
+          },
+          "external_preferred": {
+            "description": "When true, prefer installation onto external storage media",
+            "type": "boolean"
+          },
+          "internal_only": {
+            "description": "When true, only allow installation onto internal storage",
+            "type": "boolean"
+          },
+          "internal_preferred": {
+            "description": "When true, prefer installation onto internal storage",
+            "type": "boolean"
           }
         },
         "additionalProperties": false,
