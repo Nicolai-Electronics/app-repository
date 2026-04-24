@@ -54,6 +54,14 @@
       "description": "Filename for a license text file",
       "type": "string"
     },
+    "sdcardonly": {
+      "description": "When true, only allow installation onto an SD card (not internal memory)",
+      "type": "boolean"
+    },
+    "sourcecode": {
+      "description": "Optional pointer to the source code of the app",
+      "type": "string"
+    },
     "application": {
       "type": "array",
       "items": {
