@@ -1,0 +1,6 @@
+{
+    "type": "hook",
+    "api_version": 1,
+    "permissions": ["input", "display"],
+    "autostart": false
+}

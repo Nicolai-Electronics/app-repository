@@ -1,0 +1,6 @@
+{
+    "type": "service",
+    "api_version": 2,
+    "permissions": ["audio", "orientation", "led"],
+    "autostart": false
+}
