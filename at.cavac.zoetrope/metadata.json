@@ -1,6 +1,7 @@
 {
     "name": "Zotoropu",
     "description": "H.264/MJPEG video player",
+    "external_only": true,
     "categories": [
         "multimedia"
     ],

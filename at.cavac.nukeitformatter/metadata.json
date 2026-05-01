@@ -1,6 +1,7 @@
 {
     "name": "Nuke-it",
     "description": "SD Card Formatter",
+    "internal_only": true,
     "categories": [
         "tools"
     ],

@@ -1,6 +1,7 @@
 {
     "name": "TaDOOM",
-    "description": "Tanmatsu DOOM ** INSTALL ON SD CARD! **",
+    "description": "Tanmatsu DOOM",
+    "external_only": true,
     "categories": [
         "games"
     ],
