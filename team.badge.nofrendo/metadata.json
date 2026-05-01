@@ -1,6 +1,7 @@
 {
     "name": "Nofrendo NES emulator",
     "description": "NES emulator for Tanmatsu",
+    "external_only": true,
     "categories": [
         "games"
     ],

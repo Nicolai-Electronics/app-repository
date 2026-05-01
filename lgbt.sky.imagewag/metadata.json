@@ -1,6 +1,7 @@
 {
     "name": "ImageWag",
     "description": "Image viewer",
+    "external_only": true,
     "categories": [
         "image viewer"
     ],

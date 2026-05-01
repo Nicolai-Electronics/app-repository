@@ -1,6 +1,7 @@
 {
     "name": "Trackmatsu",
     "description": "Tracker and VGM music player",
+    "external_only": true,
     "categories": [
         "media"
     ],
