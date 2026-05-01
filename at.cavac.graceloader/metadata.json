@@ -1,6 +1,6 @@
 {
   "name": "Graceloader",
-  "description": "Shared loader for Cavac's apps",
+  "description": "Shared loader for Cavacs apps",
   "categories": ["tools"],
   "version": "2.0.0",
   "icon": {
