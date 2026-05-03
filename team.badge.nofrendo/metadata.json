@@ -1,7 +1,6 @@
 {
     "name": "Nofrendo NES emulator",
     "description": "NES emulator for Tanmatsu",
-    "external_only": true,
     "categories": [
         "games"
     ],
@@ -16,8 +15,10 @@
     "application": [
         {
             "targets": [
-                "tanmatsu"
+                "tanmatsu",
+                "konsool"
             ],
+            "external_only": true,
             "type": "appfs",
             "revision": 2,
             "executable": "nofrendo.bin",

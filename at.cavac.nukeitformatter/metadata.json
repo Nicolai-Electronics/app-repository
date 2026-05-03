@@ -1,7 +1,6 @@
 {
     "name": "Nuke-it",
     "description": "SD Card Formatter",
-    "internal_only": true,
     "categories": [
         "tools"
     ],
@@ -19,6 +18,7 @@
                 "tanmatsu",
                 "konsool"
             ],
+            "internal_only": true,
             "revision": 2,
             "type": "appfs",
             "executable": "nukeit-tanmatsu.bin",

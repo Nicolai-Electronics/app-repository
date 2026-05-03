@@ -1,7 +1,6 @@
 {
     "name": "Zotoropu",
     "description": "H.264/MJPEG video player",
-    "external_only": true,
     "categories": [
         "multimedia"
     ],
@@ -19,6 +18,7 @@
                 "tanmatsu",
                 "konsool"
             ],
+            "external_only": true,
             "revision": 14,
             "type": "appfs",
             "executable": "application.bin",
