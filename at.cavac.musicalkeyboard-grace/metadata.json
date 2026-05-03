@@ -1,7 +1,7 @@
 {
   "name": "Musical Keyboard GL",
   "description": "Use the Tanmatsu as a 1 octave piano",
-  "categories": ["demo"],
+  "categories": ["fun"],
   "version": "2.0.0",
   "icon": {
     "16x16": "icon16.png",

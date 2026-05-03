@@ -2,7 +2,7 @@
     "name": "Startup Sound",
     "description": "Plays sound at startup",
     "categories": [
-        "tools"
+        "multimedia"
     ],
     "version": "2.0.0",
     "icon": {

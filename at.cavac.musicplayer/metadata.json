@@ -2,7 +2,7 @@
     "name": "Music Player",
     "description": "Background MP3 music player for files in /sd/music",
     "categories": [
-        "tools"
+        "multimedia"
     ],
     "version": "2.0.0",
     "icon": {
