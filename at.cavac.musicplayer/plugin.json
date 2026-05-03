@@ -1,0 +1,6 @@
+{
+    "type": "service",
+    "api_version": 2,
+    "permissions": ["input", "display", "storage"],
+    "autostart": false
+}
