@@ -1,0 +1,85 @@
+{
+    "name": "Turret",
+    "description": "Plays turret sounds when device is picked up or put down",
+    "categories": [
+        "fun"
+    ],
+    "version": "2.0.0",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Rene Schickbauer",
+    "license_type": "MIT",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "external_only": true,
+            "revision": 2,
+            "type": "plugin",
+            "executable": "turret.plugin",
+            "assets": [
+                {
+                    "source_file": "plugin.json",
+                    "target_file": "plugin.json"
+                },
+                {
+                    "source_file": "standby_anyonethere.mp3",
+                    "target_file": "standby_anyonethere.mp3"
+                },
+                {
+                    "source_file": "standby_areyoustillthere.mp3",
+                    "target_file": "standby_areyoustillthere.mp3"
+                },
+                {
+                    "source_file": "standby_idontblameyou.mp3",
+                    "target_file": "standby_idontblameyou.mp3"
+                },
+                {
+                    "source_file": "standby_idonthateyou.mp3",
+                    "target_file": "standby_idonthateyou.mp3"
+                },
+                {
+                    "source_file": "standby_nohardfeelings.mp3",
+                    "target_file": "standby_nohardfeelings.mp3"
+                },
+                {
+                    "source_file": "standby_shuttingdown.mp3",
+                    "target_file": "standby_shuttingdown.mp3"
+                },
+                {
+                    "source_file": "standby_sleepmode.mp3",
+                    "target_file": "standby_sleepmode.mp3"
+                },
+                {
+                    "source_file": "standby_targetlost.mp3",
+                    "target_file": "standby_targetlost.mp3"
+                },
+                {
+                    "source_file": "startup_canihelpyou.mp3",
+                    "target_file": "startup_canihelpyou.mp3"
+                },
+                {
+                    "source_file": "startup_iseeyou.mp3",
+                    "target_file": "startup_iseeyou.mp3"
+                },
+                {
+                    "source_file": "startup_targetaquired.mp3",
+                    "target_file": "startup_targetaquired.mp3"
+                },
+                {
+                    "source_file": "startup_thereyouare.mp3",
+                    "target_file": "startup_thereyouare.mp3"
+                },
+                {
+                    "source_file": "startup_whoareyou.mp3",
+                    "target_file": "startup_whoareyou.mp3"
+                }
+            ]
+        }
+    ]
+}
