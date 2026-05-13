@@ -17,7 +17,7 @@
             "type": "appfs",
             "executable": "application.bin",
             "revision": 0,
-            "assets": ["icon-16x16.png", "icon-32x32.png", "icon-64x64.png", "metadata.json"]
+            "assets": []
         }
     ]
 }
