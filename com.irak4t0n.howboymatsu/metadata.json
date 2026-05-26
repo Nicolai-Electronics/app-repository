@@ -1,6 +1,6 @@
 {
     "name": "HowBoyMatsu",
-    "version": "1",
+    "version": "2",
     "description": "Game Boy Color emulator for Tanmatsu",
     "categories": ["games", "emulators"],
     "author": "Irak4t0n",
@@ -15,7 +15,7 @@
             "targets": ["tanmatsu"],
             "type": "appfs",
             "executable": "application.bin",
-            "revision": 0,
+            "revision": 1,
             "assets": []
         }
     ]
