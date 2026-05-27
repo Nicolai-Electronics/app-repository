@@ -18,6 +18,7 @@
                 "tanmatsu",
                 "konsool"
             ],
+            "internal_only": true,
             "revision": 2,
             "type": "appfs",
             "executable": "nukeit-tanmatsu.bin",

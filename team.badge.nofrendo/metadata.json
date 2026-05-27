@@ -15,8 +15,10 @@
     "application": [
         {
             "targets": [
-                "tanmatsu"
+                "tanmatsu",
+                "konsool"
             ],
+            "external_only": true,
             "type": "appfs",
             "revision": 2,
             "executable": "nofrendo.bin",

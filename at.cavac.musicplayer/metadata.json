@@ -1,17 +1,17 @@
 {
-    "name": "Zotoropu",
-    "description": "H.264/MJPEG video player",
+    "name": "Music Player",
+    "description": "Background MP3 music player for files in /sd/music",
     "categories": [
         "multimedia"
     ],
-    "version": "1.4.0",
+    "version": "2.0.0",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
         "64x64": "icon64.png"
     },
-    "author": "Rene cavac Schickbauer",
-    "license_type": "CC0-1.0",
+    "author": "Rene Schickbauer",
+    "license_type": "MIT",
     "application": [
         {
             "targets": [
@@ -19,13 +19,13 @@
                 "konsool"
             ],
             "external_only": true,
-            "revision": 14,
-            "type": "appfs",
-            "executable": "application.bin",
+            "revision": 2,
+            "type": "plugin",
+            "executable": "musicplayer.plugin",
             "assets": [
                 {
-                    "source_file": "zotoropu.jpg",
-                    "target_file": "zotoropu.jpg"
+                    "source_file": "plugin.json",
+                    "target_file": "plugin.json"
                 }
             ]
         }
