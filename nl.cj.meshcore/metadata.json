@@ -1,0 +1,30 @@
+{
+    "name": "MeshCore",
+    "description": "LoRa-mesh chat with DM channels nodes GPS and QR.",
+    "categories": [
+        "tools",
+        "utils",
+        "hardware"
+    ],
+    "version": "2.1.0",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "CJ van Soest",
+    "license_type": "MIT",
+    "license_file": "LICENSE",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "revision": 1,
+            "type": "appfs",
+            "executable": "meshcore.bin",
+            "assets": []
+        }
+    ]
+}
