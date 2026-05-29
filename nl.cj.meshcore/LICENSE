@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2026 CJ van Soest
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+This project includes third-party components with their own licenses:
+
+qrcodegen.c / qrcodegen.h
+  Copyright (c) Project Nayuki — MIT License
+  https://www.nayuki.io/page/qr-code-generator-library
+
+ed25519.c / ed25519.h
+  Based on NaCl/SUPERCOP ref10 by Daniel J. Bernstein, Niels Duif,
+  Tanja Lange, Peter Schwabe, Bo-Yin Yang — Public Domain
+  ESP32 adaptation — MIT License
+
+meshcore/ (packet.h/c, payload/advert.h/c, payload/grp_txt.h/c)
+  Copyright (c) 2025 Scott Powell / rippleradios.com
+  Copyright (c) 2025 Nicolai Electronics — MIT License
+
+main/emoji_bitmaps.c
+  Embedded 32×32 bitmaps derived from Twemoji
+  Copyright (c) Twitter, Inc. and other contributors
+  Graphics licensed under CC-BY 4.0
+  https://github.com/jdecked/twemoji
+  Source URL: https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/
+  Attribution: see assets/README.md and the file header.
