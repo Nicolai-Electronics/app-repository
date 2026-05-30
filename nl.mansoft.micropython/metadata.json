@@ -1,0 +1,20 @@
+{
+  "name": "Micropython",
+  "description": "Micropython interpreter",
+  "categories": ["tools"],
+  "version": "0.1",
+  "icon": {
+    "32x32": "icon32.png"
+  },
+  "author": "Henri Manson",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": ["tanmatsu", "konsool"],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "micropython.bin",
+      "assets": []
+    }
+  ]
+}

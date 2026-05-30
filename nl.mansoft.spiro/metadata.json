@@ -1,0 +1,23 @@
+{
+  "name": "Spirograph",
+  "description": "Spirograph",
+  "categories": ["games"],
+  "version": "0.0.1",
+  "icon": {
+    "32x32": "icon32.png"
+  },
+  "author": "Henri Manson",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": ["tanmatsu", "konsool"],
+      "revision": 1,
+      "type": "script",
+      "interpreter": "nl.mansoft.micropython",
+      "executable": "spiro",
+      "assets": [
+        {"source_file": "spiro/__init__.py", "target_file": "spiro/__init__.py"}
+      ]
+    }
+  ]
+}
