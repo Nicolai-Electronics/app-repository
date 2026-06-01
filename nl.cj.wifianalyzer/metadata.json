@@ -1,0 +1,22 @@
+{
+    "name": "WiFi Analyzer",
+    "description": "2.4 GHz WiFi scanner",
+    "version": "1.0.1",
+    "author": "CJ van Soest",
+    "license_type": "MIT",
+    "license_file": "LICENSE",
+    "categories": ["tools"],
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "application": [
+        {
+            "type": "appfs",
+            "executable": "wifianalyzer.bin",
+            "revision": 1,
+            "targets": ["tanmatsu"]
+        }
+    ]
+}
