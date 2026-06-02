@@ -16,7 +16,8 @@
             "type": "appfs",
             "executable": "wifianalyzer.bin",
             "revision": 1,
-            "targets": ["tanmatsu"]
+            "targets": ["tanmatsu"],
+            "assets": []
         }
     ]
 }
