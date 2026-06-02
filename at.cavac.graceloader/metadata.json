@@ -2,7 +2,7 @@
   "name": "Graceloader",
   "description": "Shared loader for Cavacs apps",
   "categories": ["tools"],
-  "version": "2.0.3",
+  "version": "2.1.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -13,7 +13,7 @@
   "application": [
     {
       "targets": ["tanmatsu", "konsool"],
-      "revision": 5,
+      "revision": 6,
       "type": "appfs",
       "executable": "application.bin",
       "assets": []
