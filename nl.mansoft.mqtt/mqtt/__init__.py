@@ -68,22 +68,18 @@ def subscribe_callback(topic, msg):
 		(msg.decode(), 0xff0000)
 	])
 
-def nvs_blob_to_string(mynvs, key, dflt=None):
-    # First call: get size
-    buf = bytearray(1)
-    size = mynvs.get_blob(key, bytearray(0))
-    if size is None or size == 0:
+def nvs_blob_to_string(nvs, key, dflt=None):
+    try:
+        size = mynvs.get_blob(key, bytearray(0))
+    except OSError:
         return dflt
 
-    # Allocate buffer
+    if not size:
+        return dflt
+
     buf = bytearray(size)
-
-    # Second call: fill buffer
-    mynvs.get_blob(key, buf)
-
-    # Convert bytes → string
+    nvs.get_blob(key, buf)
     return buf.decode("utf-8")
-
 
 event_queue = ucollections.deque((), 32)
 
