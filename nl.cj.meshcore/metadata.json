@@ -6,7 +6,7 @@
         "utils",
         "hardware"
     ],
-    "version": "2.3.0",
+    "version": "2.3.1",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -21,7 +21,7 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 5,
+            "revision": 6,
             "type": "appfs",
             "executable": "meshcore.bin",
             "assets": []
