@@ -1,0 +1,25 @@
+{
+  "name": "Catch the apple1",
+  "description": "Catch the apple based on mch2022 game",
+  "categories": ["games"],
+  "version": "0.0.1",
+  "icon": {
+    "32x32": "icon32.png"
+  },
+  "author": "Henri Manson",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": ["tanmatsu", "konsool"],
+      "revision": 1,
+      "type": "script",
+      "interpreter": "nl.mansoft.micropython",
+      "executable": "catch_the_apple",
+      "assets": [
+        {"source_file": "catch_the_apple/__init__.py", "target_file": "catch_the_apple/__init__.py"},
+        {"source_file": "catch_the_apple/apple.py", "target_file": "catch_the_apple/apple.py"},
+        {"source_file": "catch_the_apple/basket.py", "target_file": "catch_the_apple/basket.py"}
+      ]
+    }
+  ]
+}
