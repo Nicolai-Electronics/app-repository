@@ -1,0 +1,24 @@
+{
+  "name": "MQTT demo",
+  "description": "MQTT demo",
+  "categories": ["games"],
+  "version": "0.0.1",
+  "icon": {
+    "32x32": "icon32.png"
+  },
+  "author": "Henri Manson",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": ["tanmatsu", "konsool"],
+      "revision": 1,
+      "type": "script",
+      "interpreter": "nl.mansoft.micropython",
+      "executable": "mqtt",
+      "assets": [
+        {"source_file": "mqtt/__init__.py", "target_file": "mqtt/__init__.py"},
+        {"source_file": "umqtt/simple.py", "target_file": "umqtt/simple.py"}
+      ]
+    }
+  ]
+}
