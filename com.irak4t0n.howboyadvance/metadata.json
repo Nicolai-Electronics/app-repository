@@ -1,0 +1,22 @@
+{
+    "name": "HowBoyAdvance",
+    "version": "1",
+    "description": "Game Boy Advance emulator for Tanmatsu",
+    "categories": ["games", "emulators"],
+    "author": "Irak4t0n",
+    "license_type": "GPL-2.0",
+    "icon": {
+        "16x16": "icon-16x16.png",
+        "32x32": "icon-32x32.png",
+        "64x64": "icon-64x64.png"
+    },
+    "application": [
+        {
+            "targets": ["tanmatsu", "konsool"],
+            "type": "appfs",
+            "executable": "application.bin",
+            "revision": 1,
+            "assets": []
+        }
+    ]
+}
