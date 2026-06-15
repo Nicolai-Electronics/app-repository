@@ -11,7 +11,7 @@
         "64x64": "icon64.png"
     },
     "author": "Nicolai Electronics",
-    "license_type": "CC0",
+    "license_type": "CC0-1.0",
     "application": [
         {
             "targets": [
