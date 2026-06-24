@@ -1,0 +1,30 @@
+{
+    "name": "WadaMesh",
+    "description": "MeshCore client running LoRa, Wi-Fi & Bluetooth at once — a standalone unit and phone companion in one.",
+    "categories": [
+        "tools",
+        "utils",
+        "hardware"
+    ],
+    "version": "1.0.0",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Kaj Schittecat - ALLFATHER BV",
+    "license_type": "GPL-3.0",
+    "license_file": "LICENSE",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "revision": 1,
+            "type": "appfs",
+            "executable": "wadamesh.bin",
+            "assets": []
+        }
+    ]
+}
