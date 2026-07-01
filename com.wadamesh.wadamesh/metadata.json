@@ -6,7 +6,7 @@
         "utils",
         "hardware"
     ],
-    "version": "1.0.20",
+    "version": "1.0.25",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -21,7 +21,7 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 20,
+            "revision": 25,
             "type": "appfs",
             "executable": "wadamesh.bin",
             "assets": []
