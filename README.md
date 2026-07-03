@@ -18,7 +18,8 @@ The metadata file should contain an object with information about your app.
  - `version`: version number of your app, change to trigger an update of your app on devices which have it installed
  - `icon`: an object containing string entries for each available icon size. We recommend at least providing `16x16`, `32x32` and `64x64` icons in `png` format.
  - `author`: your (company) name
- - `license`: the license for your app
+ - `license_type`: the [SPDX identifier](https://spdx.org/licenses/) for the license of your app or `proprietary` for other licence terms, specified in the license file provided
+ - `license_file`: the filename of a file containing the full license text of your app (optional)
  - `application`: an array of objects describing which target devices your app supports and how your app should be installed onto each target device
 
 Each object in the application array must contain the following entries:
@@ -26,6 +27,45 @@ Each object in the application array must contain the following entries:
  - `target`: an array containing the names of supported boards, currently only `tanmatsu` and `konsool` are supported entries. Since Tanmatsu and Konsool are essentially the same device we recommend always adding both to apps that have been developed for one of these boards.
  - `type`: the application type, currently only `appfs` is supported
  - `executable`: the firmware binary to install
- - `assets`: an array containing a list of filenames as string, any files listed like this will be installed to either the internal FAT partition or to an inserted SD card, if you target a board which supports SD cards be sure to check both the internal FAT filesystem and the SD card for your files. The files will be copied to the `<mountpoint>/apps/<slug>/` folder.
+ - `assets`: an array containing a list of objects, each object represents a file that will be installed to either the internal FAT partition or to an inserted SD card, if you target a board which supports SD cards be sure to check both the internal FAT filesystem and the SD card for your files. The files will be copied to the `<mountpoint>/apps/<slug>/` folder. The object should be formatted as `{"source_file": "source_file.txt", "target_file": "destination_file.txt"}`. You may of course use the same name for both source and destination, but this approach allows for example for having one of multiple source files be copied to one destination depending on the target device.
 
+Example:
 
+```
+{
+  "name": "My example app",
+  "description": "Saying hello to the world",
+  "categories": [
+    "communication"
+  ],
+  "version": "0.0.1",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "John Smith",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "myawesomeapp.bin",
+      "assets": [
+        {
+          "source_file": "someresource.png",
+          "target_file": "someresource.png"
+        }
+      ]
+    }
+  ]
+}
+```
+## Note on licensing
+
+By agreeing to the contributors license agreement you (among many other grants) grant us (`Nicolai Electronics`) the right to distribute your application, regardless of the terms specified in the license file, as specified in section 2.1 of the CLA.
