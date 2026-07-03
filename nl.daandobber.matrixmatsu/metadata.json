@@ -22,9 +22,10 @@
                             "revision":  1,
                             "type":  "appfs",
                             "executable":  "matrixmatsu.bin",
-                            "assets":  [
-                                           "emoji.pak"
-                                       ]
-                        }
-                    ]
+                            "assets": [
+                          {
+                            "source_file": "emoji.pak",
+                            "target_file": "emoji.pak"
+                          }
+]
 }
