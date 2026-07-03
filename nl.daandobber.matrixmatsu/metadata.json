@@ -1,0 +1,30 @@
+﻿{
+    "name":  "MatrixMatsu",
+    "description":  "Matrix chat client for Tanmatsu and Konsool",
+    "categories":  [
+                       "communication"
+                   ],
+    "version":  "0.1.0",
+    "icon":  {
+                 "16x16":  "icon16.png",
+                 "32x32":  "icon32.png",
+                 "64x64":  "icon64.png"
+             },
+    "author":  "Daan Dobber",
+    "license_type":  "MIT",
+    "license_file":  "LICENSE",
+    "application":  [
+                        {
+                            "targets":  [
+                                            "tanmatsu",
+                                            "konsool"
+                                        ],
+                            "revision":  1,
+                            "type":  "appfs",
+                            "executable":  "matrixmatsu.bin",
+                            "assets":  [
+                                           "emoji.pak"
+                                       ]
+                        }
+                    ]
+}
