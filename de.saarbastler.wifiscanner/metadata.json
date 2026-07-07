@@ -17,7 +17,7 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 1,
+      "revision": 2,
       "type": "appfs",
       "executable": "tanmatsu-wifi-scanner.bin",
       "assets": []
