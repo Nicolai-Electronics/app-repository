@@ -1,3 +1,5 @@
 # MusicMaker
 
-Groovebox and tracker for Tanmatsu and Konsool.
+Groovebox and tracker for Tanmatsu.
+
+Source repository: https://github.com/daandobber/MatsuMusicMaker
