@@ -4,7 +4,7 @@
   "categories": [
     "tools"
   ],
-  "version": "2.5.5",
+  "version": "2.5.6",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
         "tanmatsu"
       ],
       "type": "appfs",
-      "revision": 2,
+      "revision": 3,
       "executable": "application.bin",
       "assets": []
     }
