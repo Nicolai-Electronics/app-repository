@@ -1,6 +1,6 @@
 {
   "name": "MusicPlayer",
-  "description": "MP3/WAV player with MilkDrip visualizer",
+  "description": "Audio player with visualizers and Last.fm scrobbling",
   "categories": [
     "media"
   ],
@@ -11,17 +11,16 @@
     "64x64": "icon64.png"
   },
   "author": "Daan Dobber",
-  "license_type": "MIT",
-  "license_file": "LICENSE",
+  "license_type": "proprietary",
   "application": [
     {
       "targets": [
-        "tanmatsu"
+        "tanmatsu",
+        "konsool"
       ],
       "revision": 1,
       "type": "appfs",
-      "executable": "musicplayer.bin",
-      "assets": []
+      "executable": "musicplayer.bin"
     }
   ]
 }
