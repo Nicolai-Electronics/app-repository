@@ -18,7 +18,6 @@
         "tanmatsu"
       ],
       "type": "appfs",
-      "revision": 3,
       "revision": 4,
       "executable": "application.bin",
       "assets": []
