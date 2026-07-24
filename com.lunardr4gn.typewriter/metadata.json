@@ -18,11 +18,8 @@
         "tanmatsu"
       ],
       "type": "appfs",
-<<<<<<< HEAD
       "revision": 3,
-=======
       "revision": 4,
->>>>>>> 5bc35b7 (- **Fixed file save truncation** — saving a shorter file to an existing longer file now properly truncates leftover bytes on disk instead of leaving stale content (`filesystem.c`))
       "executable": "application.bin",
       "assets": []
     }
