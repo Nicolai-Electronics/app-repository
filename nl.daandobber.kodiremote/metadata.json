@@ -1,6 +1,6 @@
 {
-  "name": "Disc-O-Matsu",
-  "description": "USB CD and DVD audio player for Tanmatsu",
+  "name": "Kodi Remote",
+  "description": "Kodi remote with media library and now playing information",
   "categories": [
     "media"
   ],
@@ -11,17 +11,16 @@
     "64x64": "icon64.png"
   },
   "author": "Daan Dobber",
-  "license_type": "MIT",
-  "license_file": "LICENSE",
+  "license_type": "CC0-1.0",
   "application": [
     {
       "targets": [
         "tanmatsu",
         "konsool"
       ],
-      "revision": 2,
+      "revision": 1,
       "type": "appfs",
-      "executable": "discomatsu.bin"
+      "executable": "kodiremote.bin"
     }
   ]
 }
