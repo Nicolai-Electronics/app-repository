@@ -1,0 +1,26 @@
+{
+  "name": "Kodi Remote",
+  "description": "Kodi remote with media library and now playing information",
+  "categories": [
+    "media"
+  ],
+  "version": "0.2.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Daan Dobber",
+  "license_type": "CC0-1.0",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "kodiremote.bin"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "BLE cat printer",
+    "description": "App for controlling a cat printer",
+    "categories": [
+        "hardware"
+    ],
+    "version": "0.0.1",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "Nicolai Electronics",
+    "license_type": "CC0-1.0",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu"
+            ],
+            "type": "appfs",
+            "revision": 1,
+            "executable": "application.bin",
+            "assets": []
+        }
+    ]
+}

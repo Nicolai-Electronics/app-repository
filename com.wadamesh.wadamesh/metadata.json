@@ -1,19 +1,19 @@
 {
-    "name": "MeshCore",
-    "description": "LoRa-mesh chat with DM channels nodes GPS and QR.",
+    "name": "WadaMesh",
+    "description": "MeshCore client running LoRa Wi-Fi & Bluetooth at once. A standalone unit and phone companion in one.",
     "categories": [
         "tools",
         "utils",
         "hardware"
     ],
-    "version": "3.6.0",
+    "version": "1.0.50",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
         "64x64": "icon64.png"
     },
-    "author": "CJ van Soest",
-    "license_type": "MIT",
+    "author": "Kaj Schittecat - ALLFATHER BV",
+    "license_type": "GPL-3.0",
     "license_file": "LICENSE",
     "application": [
         {
@@ -21,9 +21,9 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 16,
+            "revision": 50,
             "type": "appfs",
-            "executable": "meshcore.bin",
+            "executable": "wadamesh.bin",
             "assets": []
         }
     ]
