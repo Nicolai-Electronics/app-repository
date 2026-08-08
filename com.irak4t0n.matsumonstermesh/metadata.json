@@ -1,8 +1,11 @@
 {
     "name": "MatsuMonsterMesh",
     "version": "1",
-    "description": "GBC emulator + Pokemon mesh battles via LoRa",
-    "categories": ["games", "emulators"],
+    "description": "GBC emulator and Pokemon mesh battles via LoRa",
+    "categories": [
+        "games",
+        "emulators"
+    ],
     "author": "Irak4t0n",
     "license_type": "GPL-3.0-or-later",
     "icon": {
@@ -12,7 +15,9 @@
     },
     "application": [
         {
-            "targets": ["tanmatsu"],
+            "targets": [
+                "tanmatsu"
+            ],
             "type": "appfs",
             "executable": "application.bin",
             "revision": 0,
