@@ -1,6 +1,6 @@
 {
     "name": "Storage Monitor",
-    "description": "AppFS and SD staging usage, PSRAM heap, and installed-app sizes",
+    "description": "AppFS and SD staging usage + PSRAM heap + installed-app sizes",
     "categories": ["tools", "system"],
     "version": "1.0.0",
     "author": "CJ van Soest",
