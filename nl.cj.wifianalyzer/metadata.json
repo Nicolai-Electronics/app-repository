@@ -18,6 +18,13 @@
             "revision": 1,
             "targets": ["tanmatsu"],
             "assets": []
+        },
+        {
+            "type": "appfs",
+            "executable": "wifianalyzer-why2025.bin",
+            "revision": 1,
+            "targets": ["why2025"],
+            "assets": []
         }
     ]
 }
