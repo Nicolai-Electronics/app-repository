@@ -1,6 +1,6 @@
 {
     "name": "Sensors (LVGL)",
-    "description": "BME690 climate and BMI270 orientation dashboard, rendered with LVGL",
+    "description": "BME690 climate and BMI270 orientation dashboard rendered with LVGL",
     "categories": ["tools", "hardware"],
     "version": "1.0.0",
     "author": "CJ van Soest",
