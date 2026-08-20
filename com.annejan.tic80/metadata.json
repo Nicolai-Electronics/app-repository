@@ -1,0 +1,28 @@
+{
+  "name": "TIC-80",
+  "description": "Fantasy computer for making playing and sharing tiny games. Write carts in Lua with built in sprite map music and sound editors.",
+  "categories": [
+    "games",
+    "tools"
+  ],
+  "version": "1.2.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Vadim Grigoruk (nesbox) - Tanmatsu port by Anne Jan Brouwer",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "tic80.bin"
+    }
+  ]
+}
