@@ -1,6 +1,6 @@
 {
   "name": "USB HID host",
-  "description": "Plug in a keyboard, mouse or gamepad and see exactly what it reports.",
+  "description": "See exactly what a USB keyboard / mouse / gamepad reports.",
   "categories": [
     "tools",
     "hardware"
