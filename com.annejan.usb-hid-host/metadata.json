@@ -1,0 +1,28 @@
+{
+  "name": "USB HID host",
+  "description": "See exactly what a USB keyboard / mouse / gamepad reports.",
+  "categories": [
+    "tools",
+    "hardware"
+  ],
+  "version": "1.0.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Anne Jan Brouwer",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "usb-hid-host.bin"
+    }
+  ]
+}
