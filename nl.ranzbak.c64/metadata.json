@@ -2,7 +2,7 @@
     "name": "Commodore 64 emulator",
     "description": "C64 emulator based on T-HMI-C64",
     "categories": [
-        "games"
+        "emulators"
     ],
     "version": "0.0.8",
     "icon": {
