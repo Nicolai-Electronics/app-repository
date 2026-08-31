@@ -4,7 +4,7 @@
     "categories": [
         "games"
     ],
-    "version": "0.0.6",
+    "version": "0.0.7",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -19,8 +19,8 @@
                 "konsool"
             ],
             "type": "appfs",
-            "revision": 6,
-            "executable": "c64.bin",
+            "revision": 7,
+            "executable": "application.bin",
             "assets": []
         }
     ]
