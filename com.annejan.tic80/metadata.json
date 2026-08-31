@@ -1,6 +1,6 @@
 {
   "name": "TIC-80",
-  "description": "Fantasy computer for making playing and sharing tiny games. Write carts in Lua with built in sprite map music and sound editors. Plug a USB keyboard mouse or gamepad into the port to use it.",
+  "description": "Fantasy computer for making playing and sharing tiny games. Write carts in Lua with built in sprite map music and sound editors. Fn turns the arrow keys into a mouse pointer or plug a USB keyboard mouse or gamepad into the port.",
   "categories": [
     "games",
     "tools"
@@ -20,7 +20,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 5,
+      "revision": 6,
       "type": "appfs",
       "executable": "tic80.bin"
     }
