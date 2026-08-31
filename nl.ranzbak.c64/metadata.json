@@ -24,19 +24,19 @@
             "assets": [
                 {
                     "source_file": "kernal.bin",
-                    "destination_file": "kernal.bin"
+                    "target_file": "kernal.bin"
                 },
                 {
                     "source_file": "basic.bin",
-                    "destination_file": "basic.bin"
+                    "target_file": "basic.bin"
                 },
                 {
                     "source_file": "charset.bin",
-                    "destination_file": "charset.bin"
+                    "target_file": "charset.bin"
                 },
                 {
                     "source_file": "1541.bin",
-                    "destination_file": "1541.bin"
+                    "target_file": "1541.bin"
                 }
             ]
         }
