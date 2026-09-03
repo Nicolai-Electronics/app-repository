@@ -2,6 +2,8 @@
 
 TanRadio is an Internet radio player for the Tanmatsu handheld.
 
+The player supports MP3 and AAC/AAC+ radio streams.
+
 ## Station file
 
 TanRadio keeps its station list on the inserted SD card at
