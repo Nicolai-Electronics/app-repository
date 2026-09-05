@@ -17,7 +17,7 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 3,
+      "revision": 4,
       "type": "appfs",
       "executable": "tanradio.bin"
     }
