@@ -42,5 +42,5 @@ Invalid entries are skipped when the app loads the file.
 - F3: stop playback
 - F4: play or resume the selected station
 - F5: play the next station
+- F6 and Power button: toggle the screen and keyboard illumantion while playback continues.
 - Volume keys: adjust volume
-- Power button: toggle the screen and keyboard illumination while playback continues
