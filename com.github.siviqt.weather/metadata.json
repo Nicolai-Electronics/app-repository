@@ -1,0 +1,37 @@
+{
+  "name": "Weather",
+  "description": "Home weather (requires weather-enabled launcher)",
+  "categories": [
+    "tools"
+  ],
+  "version": "0.1.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "siviqt",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "plugin",
+      "executable": "weather.plugin",
+      "assets": [
+        {
+          "source_file": "plugin.json",
+          "target_file": "plugin.json"
+        },
+        {
+          "source_file": "weather_plugin.txt.example",
+          "target_file": "weather_plugin.txt.example"
+        }
+      ]
+    }
+  ]
+}

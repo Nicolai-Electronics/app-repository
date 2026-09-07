@@ -1,0 +1,6 @@
+/build/
+/work/
+/.agents/
+/.codex/
+__pycache__/
+*.pyc

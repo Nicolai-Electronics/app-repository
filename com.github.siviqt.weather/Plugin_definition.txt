@@ -1,0 +1,35 @@
+Weather plugin for Tanmatsu.
+
+Goal is to have short weather information displayed on the top of AppFS main screen, between "Home" on the left and icon set on the right.
+Weather plugin to display city/location name/ outside temperature (current, expected high and low), humidity, overcast status, wind direction/speed.
+Information to be pulled from online weather forecast APIs/websites.
+Location service to be based on the network public IP address OR configurable by the user in a weather/weather_plugin.txt file located in SD-card root.
+If some information is missing about the weather, display instead n/a for that metric. If location is not found (for example is missing or no data) display "No weather info found"
+Plugin will follow AppFS theme for color, style (light/dark) and font.
+Update interval for weather data will be upon: plugin start, during AppFS initilization if plugin has auto-start selected, every 30 minutes from start.
+Have appropriate icon.
+
+Improvement suggestions:
+- Add a details view with provider, forecast timestamp and manual refresh.
+- Offer Fahrenheit and alternative wind units.
+- Optionally show explicitly marked stale data during outages.
+- Cache IP location until the network changes.
+See ISSUES.md for the implementation's suggestions and status.
+
+
+Open issues:
+- Hardware acceptance remains pending: autostart, SD configuration, HTTPS timing,
+  light/dark themes and repeated start/stop under network failure.
+- The stock launcher requires the supplied launcher.patch for weather support.
+- wttr.in returned HTTP 500 in the live test; fallback providers responded.
+- Custom URLs require the documented JSON schema; other formats need adapters.
+- Measure actual on-device memory/stack use and crowded-header layout.
+See ISSUES.md and VALIDATION.md for details.
+
+Plugin design considerations:
+Plugin size must be minimal and have minimal resource impact.
+Require working/configured WiFi (internet access). If such is not available, display "No Internet access".
+If unable to reach the weather API/website for information, display "Weather sites not available".
+Hard code at least 3 weather data API/Websites for redundancy. If the first does not respond, try next one. 
+Users can add their own weather data points /web addresses/. Configurable in the /weather/weather_plugin.txt file.
+

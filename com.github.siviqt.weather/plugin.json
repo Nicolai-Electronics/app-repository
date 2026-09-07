@@ -1,0 +1,6 @@
+{
+  "type": "service",
+  "api_version": 196608,
+  "permissions": ["display", "network", "storage"],
+  "autostart": false
+}

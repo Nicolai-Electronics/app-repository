@@ -1,0 +1,196 @@
+diff --git a/main/CMakeLists.txt b/main/CMakeLists.txt
+index decbc22..61a20f4 100644
+--- a/main/CMakeLists.txt
++++ b/main/CMakeLists.txt
+@@ -21,6 +21,7 @@ if(CONFIG_ENABLE_LAUNCHERPLUGINS)
+ list(APPEND extra_sources
+ 	# Plugin system
+ 	"plugin_api.c"
++	"weather_host.c"
+ 	"plugin_manager.c"
+ 	"menu/menu_plugins.c"
+ )
+diff --git a/main/menu/message_dialog.c b/main/menu/message_dialog.c
+index 8f918e4..d81f933 100644
+--- a/main/menu/message_dialog.c
++++ b/main/menu/message_dialog.c
+@@ -25,6 +25,7 @@
+ #include "wifi_connection.h"
+ #ifdef CONFIG_ENABLE_LAUNCHERPLUGINS
+ #include "plugin_manager.h"
++#include "weather_host.h"
+ #endif
+ #if defined(CONFIG_BSP_TARGET_TANMATSU)
+ #include "bsp/tanmatsu.h"
+@@ -218,7 +219,14 @@ void render_base_screen_statusbar(pax_buf_t* buffer, gui_theme_t* theme, bool ba
+ #ifdef CONFIG_ENABLE_LAUNCHERPLUGINS
+     // Render plugin status widgets in the header area
+     if (header) {
+-        int widget_x_right = 380;
++        int widget_x_right = pax_buf_get_width(buffer) - theme->header.horizontal_margin;
++        int widget_x_left = theme->header.horizontal_margin + theme->header.horizontal_padding;
++        for (size_t i = 0; i < header_right_count; ++i)
++            widget_x_right -= gui_icontext_width(&theme->header, 0, 0, &header_right[i], theme->header.horizontal_padding);
++        for (size_t i = 0; i < header_left_count; ++i)
++            widget_x_left += gui_icontext_width(&theme->header, 0, 0, &header_left[i], theme->header.horizontal_padding);
++        bool weather_home = header_left_count == 1 && header_left[0].text && !strcmp(header_left[0].text, "Home");
++        weather_host_prepare(theme, widget_x_left + 8, weather_home);
+         int widget_y       = theme->header.vertical_margin;
+         int widget_height  = theme->header.height;
+         plugin_api_render_status_widgets(buffer, widget_x_right, widget_y, widget_height);
+diff --git a/main/plugin_api.c b/main/plugin_api.c
+index e8209ba..924cd2d 100644
+--- a/main/plugin_api.c
++++ b/main/plugin_api.c
+@@ -1,3 +1,4 @@
++#include "weather_host.h"
+ // SPDX-License-Identifier: MIT
+ // Tanmatsu Plugin API Implementation
+ // Provides host functions that plugins can call.
+@@ -650,6 +651,7 @@ plugin_dialog_result_t asp_plugin_show_text_dialog(const char* title, const char
+ // ============================================
+ 
+ void plugin_api_init(void) {
++    weather_host_init();
+     if (plugin_api_mutex == NULL) {
+         plugin_api_mutex = xSemaphoreCreateMutex();
+         if (plugin_api_mutex == NULL) {
+diff --git a/main/plugin_manager.c b/main/plugin_manager.c
+index 03e11f4..075e85a 100644
+--- a/main/plugin_manager.c
++++ b/main/plugin_manager.c
+@@ -590,7 +590,7 @@ static bool _plugin_manager_unload(plugin_context_t* ctx) {
+ 
+     // Stop service if running
+     if (ctx->state == PLUGIN_STATE_RUNNING) {
+-        plugin_manager_stop_service(ctx);
++        if (!plugin_manager_stop_service(ctx)) return false;
+     }
+ 
+     // Automatically clean up any API registrations (widgets, hooks, events)
+@@ -878,6 +878,14 @@ bool plugin_manager_stop_service(plugin_context_t* ctx) {
+         timeout_ms -= 100;
+     }
+ 
++    if (ctx->task_running && ctx->registration &&
++        (ctx->registration->entry.get_info()->flags & 1u)) {
++        // Cooperative services may be unwinding DNS/TLS. Their wrapper schedules
++        // deferred unload on return; never destroy a task holding network locks.
++        ESP_LOGW(TAG, "Service still stopping cooperatively: %s", ctx->plugin_slug);
++        return false;
++    }
++
+     if (ctx->task_running) {
+         // Task didn't stop gracefully, force delete it
+         ESP_LOGW(TAG, "Force stopping service plugin: %s", ctx->plugin_slug);
+diff --git a/main/weather_host.c b/main/weather_host.c
+new file mode 100644
+index 0000000..3fb2bda
+--- /dev/null
++++ b/main/weather_host.c
+@@ -0,0 +1,92 @@
++// SPDX-License-Identifier: MIT
++#include "weather_host.h"
++#include <stdlib.h>
++#include <stdio.h>
++#include <string.h>
++#include "esp_crt_bundle.h"
++#include "esp_http_client.h"
++#include "kbelf.h"
++#include "pax_gfx.h"
++#include "esp_log.h"
++static gui_theme_t *header_theme;
++static int header_left;
++static bool is_home;
++void weather_host_prepare(gui_theme_t *theme,int left,bool home) { header_theme=theme; header_left=left; is_home=home; }
++int asp_weather_draw(pax_buf_t *b,int right,int y,int height,const char *full,const char *page) {
++    if(!is_home||!header_theme) return 0;
++    gui_element_style_t *s=&header_theme->header;
++    int available=right-header_left-8;
++    if(available<32) return 0;
++    int icon=16, gap=5;
++    const char *text=full;
++    float width=pax_text_size(s->text_font,s->text_height,text).x;
++    if(width+icon+gap>available) { text=page; width=pax_text_size(s->text_font,s->text_height,text).x; }
++    char shortened[256];
++    if(width+icon+gap>available) {
++        snprintf(shortened,sizeof(shortened),"%s",text);
++        size_t n=strlen(shortened);
++        while(n && pax_text_size(s->text_font,s->text_height,shortened).x+icon+gap>available) {
++            --n; while(n && ((unsigned char)shortened[n]&0xc0)==0x80) --n;
++            shortened[n]=0;
++        }
++        text=shortened; width=pax_text_size(s->text_font,s->text_height,text).x;
++    }
++    int used=(int)width+icon+gap+4;
++    if(used>available) used=available;
++    int x=right-used, cy=y+height/2;
++    uint32_t fg=s->palette.color_foreground;
++    // A compact monochrome sun/cloud glyph inherits the header foreground.
++    pax_draw_circle(b,fg,x+5,cy-3,4);
++    pax_draw_circle(b,fg,x+5,cy+3,3);
++    pax_draw_circle(b,fg,x+10,cy+1,4);
++    pax_draw_circle(b,fg,x+14,cy+4,2);
++    pax_draw_rect(b,fg,x+5,cy+3,9,3);
++    pax_draw_text(b,fg,s->text_font,s->text_height,x+icon+gap,y+(height-s->text_height)/2.0f,text);
++    return used;
++}
++int asp_weather_http_get(plugin_context_t *ctx,const char *url,char *body,size_t cap,int *status) {
++    if(!ctx||!url||strncmp(url,"https://",8)||!body||cap<2||!status) return -1;
++    *status=0; body[0]=0;
++    if(asp_plugin_should_stop(ctx)) return -1;
++    esp_http_client_config_t config={.url=url,.timeout_ms=1200,.crt_bundle_attach=esp_crt_bundle_attach,
++        .user_agent="TanmatsuWeather/0.1 (+https://github.com/siviqt/app-repository)",.disable_auto_redirect=true};
++    esp_http_client_handle_t client=esp_http_client_init(&config);
++    if(!client) return -1;
++    int result=-1; size_t used=0;
++    uint32_t start=asp_plugin_get_tick_ms();
++    if(esp_http_client_open(client,0)!=ESP_OK || asp_plugin_should_stop(ctx)) goto done;
++    int64_t len=esp_http_client_fetch_headers(client);
++    *status=esp_http_client_get_status_code(client);
++    if(len<0 || len>=(int64_t)cap || *status!=200) goto done;
++    while(!asp_plugin_should_stop(ctx) && asp_plugin_get_tick_ms()-start<12000u) {
++        if(used==cap-1) break;
++        int n=esp_http_client_read(client,body+used,cap-1-used);
++        if(n<0) break;
++        used+=(size_t)n;
++        if(esp_http_client_is_complete_data_received(client)) { result=0; break; }
++        if(n==0) break;
++    }
++    body[used]=0;
++done:
++    esp_http_client_close(client);
++    esp_http_client_cleanup(client);
++    if(result) body[0]=0;
++    return result;
++}
++void weather_host_init(void) {
++    // Extend the existing libbadge descriptor once. No managed component edits.
++    static kbelf_builtin_lib extended;
++    if(extended.symbols) return;
++    for(size_t i=0;i<kbelfx_builtin_libs_len;i++) {
++        const kbelf_builtin_lib *old=kbelfx_builtin_libs[i];
++        if(strcmp(old->path,"libbadge.so")) continue;
++        kbelf_builtin_sym *symbols=malloc((old->symbols_len+2)*sizeof(*symbols));
++        if(!symbols) { ESP_LOGE("weather_host","Cannot register weather extension"); return; }
++        memcpy(symbols,old->symbols,old->symbols_len*sizeof(*symbols));
++        symbols[old->symbols_len]=(kbelf_builtin_sym){"asp_weather_http_get",(size_t)asp_weather_http_get};
++        symbols[old->symbols_len+1]=(kbelf_builtin_sym){"asp_weather_draw",(size_t)asp_weather_draw};
++        extended=*old; extended.symbols=symbols; extended.symbols_len+=2;
++        kbelfx_builtin_libs[i]=&extended;
++        return;
++    }
++}
+diff --git a/main/weather_host.h b/main/weather_host.h
+new file mode 100644
+index 0000000..08738bd
+--- /dev/null
++++ b/main/weather_host.h
+@@ -0,0 +1,7 @@
++#pragma once
++#include "gui_style.h"
++#include "tanmatsu_plugin.h"
++void weather_host_init(void);
++void weather_host_prepare(gui_theme_t *theme,int left,bool home);
++int asp_weather_http_get(plugin_context_t *ctx,const char *url,char *body,size_t capacity,int *status);
++int asp_weather_draw(pax_buf_t *buffer,int x_right,int y,int height,const char *full,const char *page);

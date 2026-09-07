@@ -1,0 +1,14 @@
+# Copy this file to /weather/weather_plugin.txt at the SD card root.
+# Missing file: public-IP location. No API keys required.
+location=auto
+
+# For a fixed location, replace location=auto with a city name:
+# location=Sofia
+# Optional precise coordinates (both required); these avoid geocoding:
+# latitude=42.6977
+# longitude=23.3219
+
+# Up to four custom HTTPS JSON endpoints, tried before built-ins.
+# Use the documented Weather JSON schema; a general HTML page cannot be parsed.
+# {lat} and {lon} expand to the selected coordinates.
+# custom_url=https://your-server.example/weather?lat={lat}&lon={lon}
