@@ -1,0 +1,28 @@
+{
+  "name": "Tanmatsu SDR",
+  "description": "RTL-SDR (v3/v4) receiver with BCFM, NFM, AM, SSB, 144.800 APRS and Meshtastic (LongFast & Finnish EdgeFastLow)",
+  "categories": [
+    "tools",
+    "communication"
+  ],
+  "version": "1.0.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "OH1W",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "application.bin"
+    }
+  ]
+}
