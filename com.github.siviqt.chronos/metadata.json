@@ -1,18 +1,26 @@
 {
   "name": "CHRONOS",
   "description": "Clock, alarms, stopwatch, timer and pacer",
+  "categories": [
+    "tools"
+  ],
   "version": "0.1.0",
-  "categories": ["tools"],
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
     "64x64": "icon64.png"
   },
-  "application": [{
-    "targets": ["tanmatsu"],
-    "revision": 1,
-    "type": "appfs",
-    "executable": "chronos.bin",
-    "assets": []
-  }]
+  "author": "Nikolay Enev",
+  "license_type": "MIT",
+  "license_file": "LICENSE.txt",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu"
+      ],
+      "revision": 1,
+      "type": "appfs",
+      "executable": "chronos.bin"
+    }
+  ]
 }
