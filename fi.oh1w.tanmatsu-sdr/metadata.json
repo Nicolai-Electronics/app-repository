@@ -1,6 +1,6 @@
 {
   "name": "Tanmatsu SDR",
-  "description": "RTL-SDR (v3/v4) receiver with BCFM, NFM, AM, SSB, 144.800 APRS and Meshtastic (LongFast & Finnish EdgeFastLow)",
+  "description": "RTL-SDR (v3/v4) receiver with BCFM / NFM / AM / SSB / 144.800 APRS and Meshtastic (LongFast & Finnish EdgeFastLow)",
   "categories": [
     "tools",
     "communication"
