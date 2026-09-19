@@ -6,7 +6,7 @@
         "utils",
         "hardware"
     ],
-    "version": "1.0.82",
+    "version": "1.0.83",
     "icon": {
         "16x16": "icon16.png",
         "32x32": "icon32.png",
@@ -21,7 +21,7 @@
                 "tanmatsu",
                 "konsool"
             ],
-            "revision": 82,
+            "revision": 83,
             "type": "appfs",
             "executable": "wadamesh.bin",
             "assets": []
