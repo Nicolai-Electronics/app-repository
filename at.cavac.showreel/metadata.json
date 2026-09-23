@@ -1,0 +1,61 @@
+{
+  "name": "SynthEngine Showreel",
+  "description": "Demo reel for SynthEngine3D",
+  "categories": ["demos"],
+  "version": "2.0.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Rene cavac Schickbauer",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": ["tanmatsu", "konsool"],
+      "revision": 1,
+      "type": "script",
+      "interpreter": "at.cavac.graceloader",
+      "executable": "app.so",
+      "assets": [
+        {"source_file": "app.so", "target_file": "app.so"},
+        {"source_file": "space/plate_riveted.png", "target_file": "space/plate_riveted.png"},
+        {"source_file": "space/plate_brushed.png", "target_file": "space/plate_brushed.png"},
+        {"source_file": "space/plate_gunmetal.png", "target_file": "space/plate_gunmetal.png"},
+        {"source_file": "space/plate_tread.png", "target_file": "space/plate_tread.png"},
+        {"source_file": "space/flame.png", "target_file": "space/flame.png"},
+        {"source_file": "space/station_hull.png", "target_file": "space/station_hull.png"},
+        {"source_file": "space/station_ring.png", "target_file": "space/station_ring.png"},
+        {"source_file": "space/marauder_green.png", "target_file": "space/marauder_green.png"},
+        {"source_file": "space/marauder_yellow.png", "target_file": "space/marauder_yellow.png"},
+        {"source_file": "space/flame_red.png", "target_file": "space/flame_red.png"},
+        {"source_file": "space/ground.png", "target_file": "space/ground.png"},
+        {"source_file": "space/pad.png", "target_file": "space/pad.png"},
+        {"source_file": "space/industrial_wall.png", "target_file": "space/industrial_wall.png"},
+        {"source_file": "space/rock.png", "target_file": "space/rock.png"},
+        {"source_file": "space/planet_terran.png", "target_file": "space/planet_terran.png"},
+        {"source_file": "space/planet_gas.png", "target_file": "space/planet_gas.png"},
+        {"source_file": "craftminer/coal_ore.png", "target_file": "craftminer/coal_ore.png"},
+        {"source_file": "craftminer/cobble.png", "target_file": "craftminer/cobble.png"},
+        {"source_file": "craftminer/dirt.png", "target_file": "craftminer/dirt.png"},
+        {"source_file": "craftminer/flower_red.png", "target_file": "craftminer/flower_red.png"},
+        {"source_file": "craftminer/flower_yellow.png", "target_file": "craftminer/flower_yellow.png"},
+        {"source_file": "craftminer/glass.png", "target_file": "craftminer/glass.png"},
+        {"source_file": "craftminer/grass_side.png", "target_file": "craftminer/grass_side.png"},
+        {"source_file": "craftminer/grass_top.png", "target_file": "craftminer/grass_top.png"},
+        {"source_file": "craftminer/leaves.png", "target_file": "craftminer/leaves.png"},
+        {"source_file": "craftminer/log_side.png", "target_file": "craftminer/log_side.png"},
+        {"source_file": "craftminer/log_top.png", "target_file": "craftminer/log_top.png"},
+        {"source_file": "craftminer/miner_face.png", "target_file": "craftminer/miner_face.png"},
+        {"source_file": "craftminer/planks.png", "target_file": "craftminer/planks.png"},
+        {"source_file": "craftminer/sand.png", "target_file": "craftminer/sand.png"},
+        {"source_file": "craftminer/stone.png", "target_file": "craftminer/stone.png"},
+        {"source_file": "craftminer/tall_grass.png", "target_file": "craftminer/tall_grass.png"},
+        {"source_file": "craftminer/torch.png", "target_file": "craftminer/torch.png"},
+        {"source_file": "craftminer/leaves_fast.png", "target_file": "craftminer/leaves_fast.png"},
+        {"source_file": "craftminer/torch_flame.png", "target_file": "craftminer/torch_flame.png"},
+        {"source_file": "craftminer/water.png", "target_file": "craftminer/water.png"}
+      ]
+    }
+  ]
+}
