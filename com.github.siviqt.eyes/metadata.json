@@ -1,0 +1,37 @@
+{
+  "name": "Eyes",
+  "description": "Motion activated mood and personality widget.",
+  "categories": [
+    "Fun"
+  ],
+  "version": "0.5.4",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Nikolay Enev",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "plugin",
+      "executable": "eyes.plugin",
+      "assets": [
+        {
+          "source_file": "plugin.json",
+          "target_file": "plugin.json"
+        },
+        {
+          "source_file": "LICENSE",
+          "target_file": "LICENSE"
+        }
+      ]
+    }
+  ]
+}
