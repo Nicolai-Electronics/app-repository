@@ -4,7 +4,7 @@
   "categories": [
     "games"
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 1,
+      "revision": 2,
       "type": "script",
       "interpreter": "at.cavac.graceloader",
       "executable": "app.so",
@@ -27,6 +27,42 @@
         {
           "source_file": "app.so",
           "target_file": "app.so"
+        },
+        {
+          "source_file": "textures/barrel_side.png",
+          "target_file": "textures/barrel_side.png"
+        },
+        {
+          "source_file": "textures/barrel_top.png",
+          "target_file": "textures/barrel_top.png"
+        },
+        {
+          "source_file": "textures/beans_0.png",
+          "target_file": "textures/beans_0.png"
+        },
+        {
+          "source_file": "textures/beans_1.png",
+          "target_file": "textures/beans_1.png"
+        },
+        {
+          "source_file": "textures/beans_2.png",
+          "target_file": "textures/beans_2.png"
+        },
+        {
+          "source_file": "textures/beans_3.png",
+          "target_file": "textures/beans_3.png"
+        },
+        {
+          "source_file": "textures/bed_head.png",
+          "target_file": "textures/bed_head.png"
+        },
+        {
+          "source_file": "textures/bed_side.png",
+          "target_file": "textures/bed_side.png"
+        },
+        {
+          "source_file": "textures/bed_top.png",
+          "target_file": "textures/bed_top.png"
         },
         {
           "source_file": "textures/bedrock.png",
@@ -57,6 +93,10 @@
           "target_file": "textures/cactus.png"
         },
         {
+          "source_file": "textures/cheese.png",
+          "target_file": "textures/cheese.png"
+        },
+        {
           "source_file": "textures/chest_side.png",
           "target_file": "textures/chest_side.png"
         },
@@ -73,8 +113,32 @@
           "target_file": "textures/cobble.png"
         },
         {
+          "source_file": "textures/composter_side.png",
+          "target_file": "textures/composter_side.png"
+        },
+        {
+          "source_file": "textures/composter_top.png",
+          "target_file": "textures/composter_top.png"
+        },
+        {
+          "source_file": "textures/cow_face.png",
+          "target_file": "textures/cow_face.png"
+        },
+        {
+          "source_file": "textures/cow_hide.png",
+          "target_file": "textures/cow_hide.png"
+        },
+        {
           "source_file": "textures/dirt.png",
           "target_file": "textures/dirt.png"
+        },
+        {
+          "source_file": "textures/farmland.png",
+          "target_file": "textures/farmland.png"
+        },
+        {
+          "source_file": "textures/farmland_wet.png",
+          "target_file": "textures/farmland_wet.png"
         },
         {
           "source_file": "textures/flower_red.png",
@@ -125,12 +189,104 @@
           "target_file": "textures/item_axe_wood.png"
         },
         {
+          "source_file": "textures/item_baked_beans.png",
+          "target_file": "textures/item_baked_beans.png"
+        },
+        {
+          "source_file": "textures/item_baked_potato.png",
+          "target_file": "textures/item_baked_potato.png"
+        },
+        {
+          "source_file": "textures/item_beans.png",
+          "target_file": "textures/item_beans.png"
+        },
+        {
+          "source_file": "textures/item_bed_foot.png",
+          "target_file": "textures/item_bed_foot.png"
+        },
+        {
+          "source_file": "textures/item_beef.png",
+          "target_file": "textures/item_beef.png"
+        },
+        {
+          "source_file": "textures/item_bone.png",
+          "target_file": "textures/item_bone.png"
+        },
+        {
+          "source_file": "textures/item_bread.png",
+          "target_file": "textures/item_bread.png"
+        },
+        {
+          "source_file": "textures/item_bucket.png",
+          "target_file": "textures/item_bucket.png"
+        },
+        {
+          "source_file": "textures/item_bucket_milk.png",
+          "target_file": "textures/item_bucket_milk.png"
+        },
+        {
+          "source_file": "textures/item_bucket_water.png",
+          "target_file": "textures/item_bucket_water.png"
+        },
+        {
+          "source_file": "textures/item_cheese.png",
+          "target_file": "textures/item_cheese.png"
+        },
+        {
           "source_file": "textures/item_coal.png",
           "target_file": "textures/item_coal.png"
         },
         {
+          "source_file": "textures/item_compost.png",
+          "target_file": "textures/item_compost.png"
+        },
+        {
+          "source_file": "textures/item_fence.png",
+          "target_file": "textures/item_fence.png"
+        },
+        {
+          "source_file": "textures/item_fence_gate.png",
+          "target_file": "textures/item_fence_gate.png"
+        },
+        {
+          "source_file": "textures/item_fishing_rod.png",
+          "target_file": "textures/item_fishing_rod.png"
+        },
+        {
+          "source_file": "textures/item_grilled_shrimp.png",
+          "target_file": "textures/item_grilled_shrimp.png"
+        },
+        {
+          "source_file": "textures/item_grilled_tomatoes.png",
+          "target_file": "textures/item_grilled_tomatoes.png"
+        },
+        {
+          "source_file": "textures/item_hoe_iron.png",
+          "target_file": "textures/item_hoe_iron.png"
+        },
+        {
+          "source_file": "textures/item_hoe_stone.png",
+          "target_file": "textures/item_hoe_stone.png"
+        },
+        {
+          "source_file": "textures/item_hoe_wood.png",
+          "target_file": "textures/item_hoe_wood.png"
+        },
+        {
           "source_file": "textures/item_iron_ingot.png",
           "target_file": "textures/item_iron_ingot.png"
+        },
+        {
+          "source_file": "textures/item_kebab.png",
+          "target_file": "textures/item_kebab.png"
+        },
+        {
+          "source_file": "textures/item_mutton.png",
+          "target_file": "textures/item_mutton.png"
+        },
+        {
+          "source_file": "textures/item_mutton_mash.png",
+          "target_file": "textures/item_mutton_mash.png"
         },
         {
           "source_file": "textures/item_pickaxe_iron.png",
@@ -145,6 +301,54 @@
           "target_file": "textures/item_pickaxe_wood.png"
         },
         {
+          "source_file": "textures/item_pizza.png",
+          "target_file": "textures/item_pizza.png"
+        },
+        {
+          "source_file": "textures/item_pork.png",
+          "target_file": "textures/item_pork.png"
+        },
+        {
+          "source_file": "textures/item_pork_and_beans.png",
+          "target_file": "textures/item_pork_and_beans.png"
+        },
+        {
+          "source_file": "textures/item_potato.png",
+          "target_file": "textures/item_potato.png"
+        },
+        {
+          "source_file": "textures/item_rice.png",
+          "target_file": "textures/item_rice.png"
+        },
+        {
+          "source_file": "textures/item_rice_patty.png",
+          "target_file": "textures/item_rice_patty.png"
+        },
+        {
+          "source_file": "textures/item_salmon.png",
+          "target_file": "textures/item_salmon.png"
+        },
+        {
+          "source_file": "textures/item_sardine.png",
+          "target_file": "textures/item_sardine.png"
+        },
+        {
+          "source_file": "textures/item_sashimi.png",
+          "target_file": "textures/item_sashimi.png"
+        },
+        {
+          "source_file": "textures/item_sausage.png",
+          "target_file": "textures/item_sausage.png"
+        },
+        {
+          "source_file": "textures/item_sausage_veg.png",
+          "target_file": "textures/item_sausage_veg.png"
+        },
+        {
+          "source_file": "textures/item_shears.png",
+          "target_file": "textures/item_shears.png"
+        },
+        {
           "source_file": "textures/item_shovel_iron.png",
           "target_file": "textures/item_shovel_iron.png"
         },
@@ -157,8 +361,52 @@
           "target_file": "textures/item_shovel_wood.png"
         },
         {
+          "source_file": "textures/item_shrimp.png",
+          "target_file": "textures/item_shrimp.png"
+        },
+        {
+          "source_file": "textures/item_smoked_salmon.png",
+          "target_file": "textures/item_smoked_salmon.png"
+        },
+        {
+          "source_file": "textures/item_steak_and_potatoes.png",
+          "target_file": "textures/item_steak_and_potatoes.png"
+        },
+        {
           "source_file": "textures/item_stick.png",
           "target_file": "textures/item_stick.png"
+        },
+        {
+          "source_file": "textures/item_string.png",
+          "target_file": "textures/item_string.png"
+        },
+        {
+          "source_file": "textures/item_tomato.png",
+          "target_file": "textures/item_tomato.png"
+        },
+        {
+          "source_file": "textures/item_tomato_seeds.png",
+          "target_file": "textures/item_tomato_seeds.png"
+        },
+        {
+          "source_file": "textures/item_torch.png",
+          "target_file": "textures/item_torch.png"
+        },
+        {
+          "source_file": "textures/item_wheat.png",
+          "target_file": "textures/item_wheat.png"
+        },
+        {
+          "source_file": "textures/item_wheat_seeds.png",
+          "target_file": "textures/item_wheat_seeds.png"
+        },
+        {
+          "source_file": "textures/item_wool.png",
+          "target_file": "textures/item_wool.png"
+        },
+        {
+          "source_file": "textures/item_worm.png",
+          "target_file": "textures/item_worm.png"
         },
         {
           "source_file": "textures/leaves.png",
@@ -177,12 +425,72 @@
           "target_file": "textures/log_top.png"
         },
         {
+          "source_file": "textures/milk.png",
+          "target_file": "textures/milk.png"
+        },
+        {
           "source_file": "textures/miner_face.png",
           "target_file": "textures/miner_face.png"
         },
         {
+          "source_file": "textures/pig_face.png",
+          "target_file": "textures/pig_face.png"
+        },
+        {
+          "source_file": "textures/pig_hide.png",
+          "target_file": "textures/pig_hide.png"
+        },
+        {
           "source_file": "textures/planks.png",
           "target_file": "textures/planks.png"
+        },
+        {
+          "source_file": "textures/potato_0.png",
+          "target_file": "textures/potato_0.png"
+        },
+        {
+          "source_file": "textures/potato_1.png",
+          "target_file": "textures/potato_1.png"
+        },
+        {
+          "source_file": "textures/potato_2.png",
+          "target_file": "textures/potato_2.png"
+        },
+        {
+          "source_file": "textures/potato_3.png",
+          "target_file": "textures/potato_3.png"
+        },
+        {
+          "source_file": "textures/rice_0.png",
+          "target_file": "textures/rice_0.png"
+        },
+        {
+          "source_file": "textures/rice_1.png",
+          "target_file": "textures/rice_1.png"
+        },
+        {
+          "source_file": "textures/rice_2.png",
+          "target_file": "textures/rice_2.png"
+        },
+        {
+          "source_file": "textures/rice_3.png",
+          "target_file": "textures/rice_3.png"
+        },
+        {
+          "source_file": "textures/rice_top_0.png",
+          "target_file": "textures/rice_top_0.png"
+        },
+        {
+          "source_file": "textures/rice_top_1.png",
+          "target_file": "textures/rice_top_1.png"
+        },
+        {
+          "source_file": "textures/rice_top_2.png",
+          "target_file": "textures/rice_top_2.png"
+        },
+        {
+          "source_file": "textures/rice_top_3.png",
+          "target_file": "textures/rice_top_3.png"
         },
         {
           "source_file": "textures/sand.png",
@@ -191,6 +499,58 @@
         {
           "source_file": "textures/sandstone.png",
           "target_file": "textures/sandstone.png"
+        },
+        {
+          "source_file": "textures/sapling_birch_0.png",
+          "target_file": "textures/sapling_birch_0.png"
+        },
+        {
+          "source_file": "textures/sapling_birch_1.png",
+          "target_file": "textures/sapling_birch_1.png"
+        },
+        {
+          "source_file": "textures/sapling_birch_2.png",
+          "target_file": "textures/sapling_birch_2.png"
+        },
+        {
+          "source_file": "textures/sapling_birch_3.png",
+          "target_file": "textures/sapling_birch_3.png"
+        },
+        {
+          "source_file": "textures/sapling_oak_0.png",
+          "target_file": "textures/sapling_oak_0.png"
+        },
+        {
+          "source_file": "textures/sapling_oak_1.png",
+          "target_file": "textures/sapling_oak_1.png"
+        },
+        {
+          "source_file": "textures/sapling_oak_2.png",
+          "target_file": "textures/sapling_oak_2.png"
+        },
+        {
+          "source_file": "textures/sapling_oak_3.png",
+          "target_file": "textures/sapling_oak_3.png"
+        },
+        {
+          "source_file": "textures/sausage_side.png",
+          "target_file": "textures/sausage_side.png"
+        },
+        {
+          "source_file": "textures/sausage_top.png",
+          "target_file": "textures/sausage_top.png"
+        },
+        {
+          "source_file": "textures/sheep_face.png",
+          "target_file": "textures/sheep_face.png"
+        },
+        {
+          "source_file": "textures/sheep_shorn.png",
+          "target_file": "textures/sheep_shorn.png"
+        },
+        {
+          "source_file": "textures/sheep_wool.png",
+          "target_file": "textures/sheep_wool.png"
         },
         {
           "source_file": "textures/sign_flob.png",
@@ -213,6 +573,14 @@
           "target_file": "textures/stone.png"
         },
         {
+          "source_file": "textures/stove_front.png",
+          "target_file": "textures/stove_front.png"
+        },
+        {
+          "source_file": "textures/stove_top.png",
+          "target_file": "textures/stove_top.png"
+        },
+        {
           "source_file": "textures/table_side.png",
           "target_file": "textures/table_side.png"
         },
@@ -225,8 +593,36 @@
           "target_file": "textures/tall_grass.png"
         },
         {
+          "source_file": "textures/tomato_0.png",
+          "target_file": "textures/tomato_0.png"
+        },
+        {
+          "source_file": "textures/tomato_1.png",
+          "target_file": "textures/tomato_1.png"
+        },
+        {
+          "source_file": "textures/tomato_2.png",
+          "target_file": "textures/tomato_2.png"
+        },
+        {
+          "source_file": "textures/tomato_3.png",
+          "target_file": "textures/tomato_3.png"
+        },
+        {
           "source_file": "textures/torch.png",
           "target_file": "textures/torch.png"
+        },
+        {
+          "source_file": "textures/torch_1.png",
+          "target_file": "textures/torch_1.png"
+        },
+        {
+          "source_file": "textures/torch_2.png",
+          "target_file": "textures/torch_2.png"
+        },
+        {
+          "source_file": "textures/torch_3.png",
+          "target_file": "textures/torch_3.png"
         },
         {
           "source_file": "textures/torch_flame.png",
@@ -243,6 +639,26 @@
         {
           "source_file": "textures/water.png",
           "target_file": "textures/water.png"
+        },
+        {
+          "source_file": "textures/water_blend.png",
+          "target_file": "textures/water_blend.png"
+        },
+        {
+          "source_file": "textures/wheat_0.png",
+          "target_file": "textures/wheat_0.png"
+        },
+        {
+          "source_file": "textures/wheat_1.png",
+          "target_file": "textures/wheat_1.png"
+        },
+        {
+          "source_file": "textures/wheat_2.png",
+          "target_file": "textures/wheat_2.png"
+        },
+        {
+          "source_file": "textures/wheat_3.png",
+          "target_file": "textures/wheat_3.png"
         },
         {
           "source_file": "music/bach_sheep_may_safely_graze.mid",
