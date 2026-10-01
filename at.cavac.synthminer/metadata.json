@@ -4,7 +4,7 @@
   "categories": [
     "games"
   ],
-  "version": "0.2.0",
+  "version": "0.2.1",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 2,
+      "revision": 3,
       "type": "script",
       "interpreter": "at.cavac.graceloader",
       "executable": "app.so",
@@ -155,6 +155,10 @@
         {
           "source_file": "textures/furnace_top.png",
           "target_file": "textures/furnace_top.png"
+        },
+        {
+          "source_file": "textures/gate.png",
+          "target_file": "textures/gate.png"
         },
         {
           "source_file": "textures/glass.png",
