@@ -1,0 +1,50 @@
+{
+  "name": "Portals",
+  "description": "Portal puzzles in three test chambers",
+  "categories": [
+    "games"
+  ],
+  "version": "0.1.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "Anne Jan Brouwer",
+  "license_type": "MIT",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu",
+        "konsool"
+      ],
+      "revision": 1,
+      "type": "script",
+      "interpreter": "at.cavac.graceloader",
+      "executable": "app.so",
+      "assets": [
+        {
+          "source_file": "app.so",
+          "target_file": "app.so"
+        },
+        {
+          "source_file": "textures/exit.png",
+          "target_file": "textures/exit.png"
+        },
+        {
+          "source_file": "textures/goo.png",
+          "target_file": "textures/goo.png"
+        },
+        {
+          "source_file": "textures/metal.png",
+          "target_file": "textures/metal.png"
+        },
+        {
+          "source_file": "textures/white.png",
+          "target_file": "textures/white.png"
+        }
+      ]
+    }
+  ],
+  "license_file": "LICENSE"
+}
