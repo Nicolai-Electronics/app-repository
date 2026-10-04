@@ -1,10 +1,10 @@
 {
   "name": "Portals",
-  "description": "Portal puzzles in five test chambers",
+  "description": "Portal puzzles in nine test chambers",
   "categories": [
     "games"
   ],
-  "version": "0.3.0",
+  "version": "0.4.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -46,6 +46,18 @@
         {
           "source_file": "textures/cube.png",
           "target_file": "textures/cube.png"
+        },
+        {
+          "source_file": "textures/glass.png",
+          "target_file": "textures/glass.png"
+        },
+        {
+          "source_file": "textures/fizz.png",
+          "target_file": "textures/fizz.png"
+        },
+        {
+          "source_file": "textures/jump.png",
+          "target_file": "textures/jump.png"
         }
       ]
     }
