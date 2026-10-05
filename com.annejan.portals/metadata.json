@@ -1,10 +1,10 @@
 {
   "name": "Portals",
-  "description": "Portal puzzles in ten test chambers",
+  "description": "Portal puzzles in twenty test chambers",
   "categories": [
     "games"
   ],
-  "version": "0.5.1",
+  "version": "0.10.1",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -58,6 +58,10 @@
         {
           "source_file": "textures/jump.png",
           "target_file": "textures/jump.png"
+        },
+        {
+          "source_file": "textures/field.png",
+          "target_file": "textures/field.png"
         }
       ]
     }
