@@ -1,0 +1,16 @@
+SAM (Software Automatic Mouth), as in third_party/sam/
+
+SAM was published in 1982 by Don't Ask Software as a commercial program
+for the Commodore 64, the Atari 8-bit and the Apple II. The C code here is
+Sebastian Macke's reverse-engineered port of it
+(https://github.com/s-macke/SAM, commit a7b36ef), with the changes listed
+in third_party/sam/README.md.
+
+No license has been granted for it. Don't Ask Software no longer exists,
+attempts to reach the original authors have failed, and the author of the
+port states that he cannot put it under any license: by his account it is
+abandonware. It is included here as it is, for GLaDOS's voice, and is NOT
+covered by the MIT license of the rest of this project.
+
+If you hold rights to SAM and want it removed, open an issue at
+https://github.com/annejan/tanmatsu-portals-grace/issues and it will be.
