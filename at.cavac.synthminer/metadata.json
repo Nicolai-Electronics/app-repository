@@ -4,7 +4,7 @@
   "categories": [
     "games"
   ],
-  "version": "0.2.1",
+  "version": "0.3.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 3,
+      "revision": 4,
       "type": "script",
       "interpreter": "at.cavac.graceloader",
       "executable": "app.so",
@@ -127,6 +127,10 @@
         {
           "source_file": "textures/cow_hide.png",
           "target_file": "textures/cow_hide.png"
+        },
+        {
+          "source_file": "textures/diamond_ore.png",
+          "target_file": "textures/diamond_ore.png"
         },
         {
           "source_file": "textures/dirt.png",
@@ -245,6 +249,10 @@
           "target_file": "textures/item_compost.png"
         },
         {
+          "source_file": "textures/item_diamond.png",
+          "target_file": "textures/item_diamond.png"
+        },
+        {
           "source_file": "textures/item_fence.png",
           "target_file": "textures/item_fence.png"
         },
@@ -283,6 +291,10 @@
         {
           "source_file": "textures/item_kebab.png",
           "target_file": "textures/item_kebab.png"
+        },
+        {
+          "source_file": "textures/item_mine_shaft.png",
+          "target_file": "textures/item_mine_shaft.png"
         },
         {
           "source_file": "textures/item_mutton.png",
@@ -411,6 +423,10 @@
         {
           "source_file": "textures/item_worm.png",
           "target_file": "textures/item_worm.png"
+        },
+        {
+          "source_file": "textures/lava.png",
+          "target_file": "textures/lava.png"
         },
         {
           "source_file": "textures/leaves.png",
@@ -543,6 +559,14 @@
         {
           "source_file": "textures/sausage_top.png",
           "target_file": "textures/sausage_top.png"
+        },
+        {
+          "source_file": "textures/shaft_column.png",
+          "target_file": "textures/shaft_column.png"
+        },
+        {
+          "source_file": "textures/shaft_truss.png",
+          "target_file": "textures/shaft_truss.png"
         },
         {
           "source_file": "textures/sheep_face.png",
