@@ -1,31 +1,59 @@
 {
-  "name": "ADSB",
-  "description": "Flight Radar",
+  "name": "ADS-B Radar",
+  "description": "Aircraft map and radar with arrivals and statistics",
   "categories": [
     "Tools"
   ],
-  "version": "0.1.0",
+  "version": "0.3.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
     "64x64": "icon64.png"
   },
-  "author": "Nikolay Enev",
+  "author": "Nikolay Enev; upstream Neil",
   "license_type": "MIT",
   "license_file": "LICENSE",
   "application": [
     {
       "targets": [
-        "tanmatsu",
-        "konsool"
+        "tanmatsu"
       ],
-      "revision": 1,
+      "revision": 9,
       "type": "appfs",
-      "executable": "adsb.bin",
+      "executable": "application.bin",
+      "external_only": true,
       "assets": [
         {
           "source_file": "LICENSE",
           "target_file": "LICENSE"
+        },
+        {
+          "source_file": "THIRD_PARTY_NOTICES.txt",
+          "target_file": "THIRD_PARTY_NOTICES.txt"
+        },
+        {
+          "source_file": "atlas-v2.json",
+          "target_file": "atlas-v2.json"
+        },
+        {
+          "source_file": "DATA_NOTICES.txt",
+          "target_file": "DATA_NOTICES.txt"
+        },
+        {
+          "source_file": "cities-v1.dat",
+          "target_file": "cities-v1.dat"
+        },
+        {
+          "source_file": "cities-v1.idx",
+          "target_file": "cities-v1.idx"
+        },
+        {
+          "source_file": "world-v2-000.avp",
+          "target_file": "world-v2-000.avp"
+        },
+        {
+          "source_file": "world-v2.idx",
+          "target_file": "world-v2.idx"
         }
       ]
     }
