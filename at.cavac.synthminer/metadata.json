@@ -4,7 +4,7 @@
   "categories": [
     "games"
   ],
-  "version": "0.3.0",
+  "version": "0.4.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 4,
+      "revision": 5,
       "type": "script",
       "interpreter": "at.cavac.graceloader",
       "executable": "app.so",
@@ -145,6 +145,22 @@
           "target_file": "textures/farmland_wet.png"
         },
         {
+          "source_file": "textures/flame_0.png",
+          "target_file": "textures/flame_0.png"
+        },
+        {
+          "source_file": "textures/flame_1.png",
+          "target_file": "textures/flame_1.png"
+        },
+        {
+          "source_file": "textures/flame_2.png",
+          "target_file": "textures/flame_2.png"
+        },
+        {
+          "source_file": "textures/flame_3.png",
+          "target_file": "textures/flame_3.png"
+        },
+        {
           "source_file": "textures/flower_red.png",
           "target_file": "textures/flower_red.png"
         },
@@ -181,6 +197,22 @@
           "target_file": "textures/gravel.png"
         },
         {
+          "source_file": "textures/haze_0.png",
+          "target_file": "textures/haze_0.png"
+        },
+        {
+          "source_file": "textures/haze_1.png",
+          "target_file": "textures/haze_1.png"
+        },
+        {
+          "source_file": "textures/haze_2.png",
+          "target_file": "textures/haze_2.png"
+        },
+        {
+          "source_file": "textures/haze_3.png",
+          "target_file": "textures/haze_3.png"
+        },
+        {
           "source_file": "textures/iron_ore.png",
           "target_file": "textures/iron_ore.png"
         },
@@ -191,6 +223,10 @@
         {
           "source_file": "textures/item_axe_stone.png",
           "target_file": "textures/item_axe_stone.png"
+        },
+        {
+          "source_file": "textures/item_axe_titanium.png",
+          "target_file": "textures/item_axe_titanium.png"
         },
         {
           "source_file": "textures/item_axe_wood.png",
@@ -221,6 +257,14 @@
           "target_file": "textures/item_bone.png"
         },
         {
+          "source_file": "textures/item_boots_iron.png",
+          "target_file": "textures/item_boots_iron.png"
+        },
+        {
+          "source_file": "textures/item_boots_titanium.png",
+          "target_file": "textures/item_boots_titanium.png"
+        },
+        {
           "source_file": "textures/item_bread.png",
           "target_file": "textures/item_bread.png"
         },
@@ -239,6 +283,14 @@
         {
           "source_file": "textures/item_cheese.png",
           "target_file": "textures/item_cheese.png"
+        },
+        {
+          "source_file": "textures/item_chestplate_iron.png",
+          "target_file": "textures/item_chestplate_iron.png"
+        },
+        {
+          "source_file": "textures/item_chestplate_titanium.png",
+          "target_file": "textures/item_chestplate_titanium.png"
         },
         {
           "source_file": "textures/item_coal.png",
@@ -273,6 +325,14 @@
           "target_file": "textures/item_grilled_tomatoes.png"
         },
         {
+          "source_file": "textures/item_helmet_iron.png",
+          "target_file": "textures/item_helmet_iron.png"
+        },
+        {
+          "source_file": "textures/item_helmet_titanium.png",
+          "target_file": "textures/item_helmet_titanium.png"
+        },
+        {
           "source_file": "textures/item_hoe_iron.png",
           "target_file": "textures/item_hoe_iron.png"
         },
@@ -293,6 +353,14 @@
           "target_file": "textures/item_kebab.png"
         },
         {
+          "source_file": "textures/item_leggings_iron.png",
+          "target_file": "textures/item_leggings_iron.png"
+        },
+        {
+          "source_file": "textures/item_leggings_titanium.png",
+          "target_file": "textures/item_leggings_titanium.png"
+        },
+        {
           "source_file": "textures/item_mine_shaft.png",
           "target_file": "textures/item_mine_shaft.png"
         },
@@ -311,6 +379,10 @@
         {
           "source_file": "textures/item_pickaxe_stone.png",
           "target_file": "textures/item_pickaxe_stone.png"
+        },
+        {
+          "source_file": "textures/item_pickaxe_titanium.png",
+          "target_file": "textures/item_pickaxe_titanium.png"
         },
         {
           "source_file": "textures/item_pickaxe_wood.png",
@@ -373,6 +445,10 @@
           "target_file": "textures/item_shovel_stone.png"
         },
         {
+          "source_file": "textures/item_shovel_titanium.png",
+          "target_file": "textures/item_shovel_titanium.png"
+        },
+        {
           "source_file": "textures/item_shovel_wood.png",
           "target_file": "textures/item_shovel_wood.png"
         },
@@ -395,6 +471,18 @@
         {
           "source_file": "textures/item_string.png",
           "target_file": "textures/item_string.png"
+        },
+        {
+          "source_file": "textures/item_sword_iron.png",
+          "target_file": "textures/item_sword_iron.png"
+        },
+        {
+          "source_file": "textures/item_sword_titanium.png",
+          "target_file": "textures/item_sword_titanium.png"
+        },
+        {
+          "source_file": "textures/item_titanium_ingot.png",
+          "target_file": "textures/item_titanium_ingot.png"
         },
         {
           "source_file": "textures/item_tomato.png",
@@ -557,6 +645,10 @@
           "target_file": "textures/sausage_side.png"
         },
         {
+          "source_file": "textures/sausage_side_full.png",
+          "target_file": "textures/sausage_side_full.png"
+        },
+        {
           "source_file": "textures/sausage_top.png",
           "target_file": "textures/sausage_top.png"
         },
@@ -593,6 +685,14 @@
           "target_file": "textures/sign_wolfie.png"
         },
         {
+          "source_file": "textures/smith_front.png",
+          "target_file": "textures/smith_front.png"
+        },
+        {
+          "source_file": "textures/smith_top.png",
+          "target_file": "textures/smith_top.png"
+        },
+        {
           "source_file": "textures/snow.png",
           "target_file": "textures/snow.png"
         },
@@ -619,6 +719,10 @@
         {
           "source_file": "textures/tall_grass.png",
           "target_file": "textures/tall_grass.png"
+        },
+        {
+          "source_file": "textures/titanium_ore.png",
+          "target_file": "textures/titanium_ore.png"
         },
         {
           "source_file": "textures/tomato_0.png",
