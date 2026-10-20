@@ -4,22 +4,28 @@
   "categories": [
     "media"
   ],
-  "version": "0.4.1",
+  "version": "0.5.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
     "64x64": "icon64.png"
   },
-  "author": "siviqt",
-  "license_type": "proprietary",
+  "author": "Nikolay Enev",
+  "license_type": "MIT",
   "application": [
     {
       "targets": [
         "tanmatsu"
       ],
-      "revision": 4,
+      "revision": 5,
       "type": "appfs",
-      "executable": "tanradio.bin"
+      "executable": "tanradio.bin",
+      "assets": [
+        {
+          "source_file": "LICENSE",
+          "target_file": "LICENSE"
+        }
+      ]
     }
   ]
 }
