@@ -2,7 +2,9 @@
 
 TanRadio is an Internet radio player for the Tanmatsu handheld.
 
-The player supports MP3 and AAC/AAC+ radio streams.
+The player supports MP3 radio streams.
+
+It has Internet radio search function, which utilize https://api.radio-browser.info/.
 
 ## Station file
 
@@ -38,9 +40,9 @@ Invalid entries are skipped when the app loads the file.
 - Up/Down: select a station
 - Enter: select the highlighted station
 - F1: exit to the launcher
-- F2: mute or unmute
+- F2: search internet radio stations
 - F3: stop playback
-- F4: play or resume the selected station
+- F4: play/mute/unmute
 - F5: play the next station
 - F6 and Power button: toggle the screen and keyboard illumantion while playback continues.
 - Volume keys: adjust volume

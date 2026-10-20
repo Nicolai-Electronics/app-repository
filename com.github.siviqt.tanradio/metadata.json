@@ -4,7 +4,7 @@
   "categories": [
     "media"
   ],
-  "version": "0.5.0",
+  "version": "0.6.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -17,9 +17,9 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 5,
+      "revision": 6,
       "type": "appfs",
-      "executable": "tanradio.bin",
+      "executable": "TanRadio.bin",
       "assets": [
         {
           "source_file": "LICENSE",
