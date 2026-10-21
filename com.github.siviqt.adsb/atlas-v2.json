@@ -1,0 +1,79 @@
+{
+  "cities": {
+    "cities": 236278,
+    "english_names": 238036,
+    "index_record_bytes": 80,
+    "record_bytes": 120
+  },
+  "coverage": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "files": {
+    "DATA_NOTICES.txt": {
+      "bytes": 4326,
+      "crc32": 2034585237,
+      "sha256": "72b97626d5e0191ab8107302352719df7fe0bbdb8b78c5674b91b39d2cd6021e"
+    },
+    "cities-v1.dat": {
+      "bytes": 28353376,
+      "crc32": 3467594304,
+      "sha256": "3757036f358b157dbf4b98c82e8aa05f8c70bccc5c80fe729e8dc0280a35410d"
+    },
+    "cities-v1.idx": {
+      "bytes": 19042912,
+      "crc32": 1379886543,
+      "sha256": "b89626e3830f73212ce55ee5fdc9c4135f2bfb91793cffb199253a241a5daf4c"
+    },
+    "world-v2-000.avp": {
+      "bytes": 12103317,
+      "crc32": 2043826034,
+      "sha256": "c6a2dc6428a89119c47a18cd816c9bdb6d55cda3c702e73d573ffd5d497342c0"
+    },
+    "world-v2.idx": {
+      "bytes": 248864,
+      "crc32": 4073203153,
+      "sha256": "e335dffed3e465a349388ebf11ad7b5110bfca31369a691a05bdf6533c8c49c4"
+    }
+  },
+  "language": "en",
+  "projection": "spherical-azimuthal-equidistant",
+  "sources": {
+    "admin1CodesASCII.txt": "1da92a6323a5fec3176f3f743bf4cf4040fd56a876da55e46fbca23c863aa60a",
+    "alternateNamesV2.zip": "5dc235aba7adca5290dd4f98b28b1a3534e1dbe97f4c5732323bcac865d535d1",
+    "borders.geojson": "74d9c16229c095fde65943a9919e337682f044bcebccb120764f38edf3b70f4a",
+    "cities500.zip": "fedf197c2b4aabffe5941ff85be5c5bd101b85ea00547547d3326e21df63ccce",
+    "countryInfo.txt": "c55f638cfaafb4fe45a9aa15120a0f1f78e8a34a8e1847d7b9320cf740fbc9ab",
+    "lakes.geojson": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+    "land.geojson": "1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416",
+    "places.geojson": "9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b",
+    "rivers.geojson": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+    "roads.geojson": "66a0c7b438e92fd124822cc5921cfa11042f48c294ade5e0f03f2c6640fd0248"
+  },
+  "validation": {
+    "cities": {
+      "cities": 236278,
+      "english_names": 238036
+    },
+    "world": {
+      "blocks": 7776,
+      "full_domain_all_lods": true,
+      "paths": 146938,
+      "records": 168283,
+      "vertices": 2614920
+    }
+  },
+  "version": 2,
+  "world": {
+    "blocks": 7776,
+    "lods": [
+      0.0005,
+      0.002,
+      0.008
+    ],
+    "max_block_bytes": 31082,
+    "max_block_vertices": 7618
+  }
+}
