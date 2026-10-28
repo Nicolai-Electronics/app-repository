@@ -73,8 +73,15 @@ Adafruit GFX / ST7735_ST7789 (T-Deck / Heltec V4 display backend)
 chsc6x (Heltec V4 CHSC6x cap-touch driver)
     Quency-D — https://github.com/Quency-D/chsc6x
 
-SensorLib (T-LoRa Pager XL9555/BQ27220/AW9364 drivers)
+SensorLib (T-LoRa Pager XL9555/BQ27220/AW9364/DRV2605/BHI260AP drivers)
     Copyright (c) Lewis He — MIT License — https://github.com/lewisxhe/SensorLib
+    It bundles Bosch Sensortec's BHY2 SensorAPI (Copyright (c) 2023 Bosch
+    Sensortec GmbH, BSD-3-Clause) and the Bosch BHI260AP "Klio" firmware image
+    as distributed with SensorLib, which wadamesh uploads to the Pager's sensor
+    hub at first use.
+
+XPowersLib (T-LoRa Pager BQ25896 charger driver)
+    Copyright (c) Lewis He — MIT License — https://github.com/lewisxhe/XPowersLib
 
 ES8311 register sequence and clock-divider coefficients (T-LoRa Pager audio
 codec driver, variants/lilygo_tlora_pager/Es8311Codec.cpp; T-Display P4 audio
@@ -112,6 +119,17 @@ Camillia-MT (CrowPanel Advance 5.0 display, backlight and touch bring-up)
     The RGB panel configuration, revision detection, backlight controller and
     GT911 reset in variants/crowpanel_50/CrowPanel50Display.cpp are adapted
     from src/hal/crowpanel_50_display.h and src/hal/hw_crowpanel_50.h.
+
+LilyGo cpp_bus_driver (T-Display P4 vibration motor, AW86224 haptic driver,
+variants/tdisplay_p4/P4Haptic.cpp and P4HapticWaveform.h)
+    Copyright (c) LILYGO
+    GPL-3.0 License (version 3 only; no "or later" grant) —
+    https://github.com/Llgok/cpp_bus_driver
+    The AW86224 register sequence (RAM-mode init, waveform load/verify,
+    playback, stop) is adapted from src/chip/i2c/aw862xx.cpp and re-based onto
+    Arduino Wire; the "12k_041230_235" RAM waveform library is copied verbatim
+    from src/chip/i2c/aw862xx_haptic_waveform_table.inc. Those two files keep
+    upstream's terms (SPDX GPL-3.0-only).
 
 This list is not exhaustive and is expanded as dependencies are vendored or
 added.
