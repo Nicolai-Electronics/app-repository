@@ -4,7 +4,7 @@
   "categories": [
     "tools"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,7 +18,7 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 4,
+      "revision": 5,
       "type": "appfs",
       "executable": "chronos.bin",
       "assets": [
