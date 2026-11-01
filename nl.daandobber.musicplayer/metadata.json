@@ -19,6 +19,7 @@
         "konsool"
       ],
       "revision": 1,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "musicplayer.bin"
     }

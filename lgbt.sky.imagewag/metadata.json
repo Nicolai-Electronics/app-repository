@@ -20,6 +20,7 @@
             ],
             "external_only": true,
             "revision": 2,
+            "bsp_version": 1,
             "type": "appfs",
             "executable": "imagewag-tanmatsu.bin",
             "assets": []

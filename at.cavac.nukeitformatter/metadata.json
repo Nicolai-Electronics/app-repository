@@ -20,6 +20,7 @@
             ],
             "internal_only": true,
             "revision": 3,
+            "bsp_version": 1,
             "type": "appfs",
             "executable": "nukeit-tanmatsu.bin",
             "assets": []

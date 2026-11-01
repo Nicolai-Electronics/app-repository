@@ -21,6 +21,7 @@
         "konsool"
       ],
       "revision": 7,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "tic80.bin"
     }

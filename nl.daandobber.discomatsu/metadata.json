@@ -20,6 +20,7 @@
         "konsool"
       ],
       "revision": 2,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "discomatsu.bin"
     }

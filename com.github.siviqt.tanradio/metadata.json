@@ -18,6 +18,7 @@
         "tanmatsu"
       ],
       "revision": 8,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "TanRadio.bin",
       "assets": [

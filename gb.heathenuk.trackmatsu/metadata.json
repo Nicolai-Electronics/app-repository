@@ -21,6 +21,7 @@
             "external_only": true,
             "type": "appfs",
             "revision": 1,
+            "bsp_version": 1,
             "executable": "trackmatsu.bin",
             "assets": []
         }

@@ -71,6 +71,10 @@
           "revision": {
             "type": "integer"
           },
+          "bsp_version": {
+            "description": "Major BSP version used to build this application, used to indicate support for newer hardware",
+            "type": "integer"
+          },
           "executable": {
             "type": "string"
           },

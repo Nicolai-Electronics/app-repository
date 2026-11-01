@@ -14,6 +14,7 @@
     {
       "targets": ["tanmatsu", "konsool"],
       "revision": 18,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "application.bin",
       "assets": []

@@ -19,6 +19,7 @@
             ],
             "type": "appfs",
             "revision": 1,
+            "bsp_version": 1,
             "executable": "application.bin",
             "assets": []
         }

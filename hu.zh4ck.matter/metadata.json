@@ -19,6 +19,7 @@
                 "konsool"
             ],
             "revision": 4,
+            "bsp_version": 1,
             "type": "appfs",
             "executable": "matter.bin",
             "assets": []

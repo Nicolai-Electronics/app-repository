@@ -20,6 +20,7 @@
       ],
       "external_only": true,
       "revision": 3,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "application.bin",
       "assets": [
