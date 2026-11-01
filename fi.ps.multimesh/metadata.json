@@ -16,6 +16,7 @@
       "targets": ["tanmatsu", "konsool"],
       "type": "appfs",
       "revision": 48,
+      "bsp_version": 1,
       "executable": "multimesh.bin",
       "assets": []
     }

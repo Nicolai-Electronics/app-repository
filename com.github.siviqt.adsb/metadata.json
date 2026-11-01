@@ -19,6 +19,7 @@
         "tanmatsu"
       ],
       "revision": 10,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "application.bin",
       "external_only": true,

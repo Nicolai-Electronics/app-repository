@@ -22,6 +22,7 @@
                 "konsool"
             ],
             "revision": 101,
+            "bsp_version": 1,
             "type": "appfs",
             "executable": "wadamesh.bin",
             "assets": []

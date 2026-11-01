@@ -19,6 +19,7 @@
         "tanmatsu"
       ],
       "revision": 5,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "chronos.bin",
       "assets": [

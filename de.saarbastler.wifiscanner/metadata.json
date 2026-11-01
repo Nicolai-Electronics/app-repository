@@ -18,6 +18,7 @@
         "tanmatsu"
       ],
       "revision": 2,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "tanmatsu-wifi-scanner.bin",
       "assets": []

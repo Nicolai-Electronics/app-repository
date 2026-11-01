@@ -12,6 +12,7 @@
     {
       "targets": ["tanmatsu", "konsool"],
       "revision": 2,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "micropython.bin",
       "assets": []

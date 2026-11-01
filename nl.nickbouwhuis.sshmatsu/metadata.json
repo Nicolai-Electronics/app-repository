@@ -21,6 +21,7 @@
         "konsool"
       ],
       "revision": 1,
+      "bsp_version": 1,
       "type": "appfs",
       "executable": "application.bin",
       "assets": []
