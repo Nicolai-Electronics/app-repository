@@ -25,11 +25,17 @@ The metadata file should contain an object with information about your app.
 
 Each object in the application array must contain the following entries:
 
- - `target`: an array containing the names of supported boards, currently only `tanmatsu` and `konsool` are supported entries. Since Tanmatsu and Konsool are essentially the same device we recommend always adding both to apps that have been developed for one of these boards.
- - `type`: the application type, currently only `appfs` is supported
+ - `targets`: an array containing the names of supported boards, such as `tanmatsu`, `konsool` or `why2025`. Since Tanmatsu and Konsool are essentially the same device we recommend always adding both to apps that have been developed for one of these boards.
+ - `type`: the application type. Supported values are `appfs` (a binary executed directly from the application filesystem) and `script` (an application run by another installed app acting as an interpreter, specified via `interpreter`)
+ - `revision`: an integer revision number for this build of your app, change to trigger an update of your app on devices which have it installed (optional)
  - `bsp_version`: the major BSP version used to build this application, used to indicate support for newer hardware such as the updated Tanmatsu display (optional, place it directly below `revision`)
  - `executable`: the firmware binary to install
+ - `interpreter`: the `slug` of another installed app that acts as the interpreter for this application, required when `type` is `script`
  - `assets`: an array containing a list of objects, each object represents a file that will be installed to either the internal FAT partition or to an inserted SD card, if you target a board which supports SD cards be sure to check both the internal FAT filesystem and the SD card for your files. The files will be copied to the `<mountpoint>/apps/<slug>/` folder. The object should be formatted as `{"source_file": "source_file.txt", "target_file": "destination_file.txt"}`. You may of course use the same name for both source and destination, but this approach allows for example for having one of multiple source files be copied to one destination depending on the target device.
+ - `external_only`: when true, only allow installation onto external storage media such as an SD card, not internal memory (optional)
+ - `external_preferred`: when true, prefer installation onto external storage media such as an SD card (optional)
+ - `internal_only`: when true, only allow installation onto internal storage (optional)
+ - `internal_preferred`: when true, prefer installation onto internal storage (optional)
 
 Example:
 
