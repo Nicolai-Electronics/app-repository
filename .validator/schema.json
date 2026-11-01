@@ -16,6 +16,10 @@
       "minLength": 0,
       "pattern": "^[A-Za-z0-9_\\- .!@#$%^&*()\\/\\\\]+$"
     },
+    "repository_url": {
+      "type": "string",
+      "description": "URL of the repository containing the source code of the app"
+    },
     "categories": {
       "type": "array",
       "items": {
