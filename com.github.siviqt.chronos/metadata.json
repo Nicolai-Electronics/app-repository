@@ -1,6 +1,6 @@
 {
   "name": "CHRONOS",
-  "description": "Clock, alarms, stopwatch, timer and pacer",
+  "description": "CTime keeping app with complications",
   "categories": [
     "tools"
   ],
