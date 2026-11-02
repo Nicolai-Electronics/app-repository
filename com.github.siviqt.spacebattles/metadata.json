@@ -19,8 +19,8 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 7,
-      "bsp_version": 1,
+      "revision": 8,
+      "bsp_version": 2,
       "type": "appfs",
       "executable": "spacebattles.bin",
       "assets": [

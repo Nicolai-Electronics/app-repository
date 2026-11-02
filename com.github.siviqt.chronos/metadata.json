@@ -1,10 +1,10 @@
 {
   "name": "CHRONOS",
-  "description": "Time keeping app with complications",
+  "description": "CTime keeping app with complications",
   "categories": [
     "tools"
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -18,16 +18,31 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 5,
-      "bsp_version": 1,
+      "revision": 6,
+      "bsp_version": 2,
       "type": "appfs",
       "executable": "chronos.bin",
       "assets": [
-        {"source_file": "alarm1.wav", "target_file": "alarm1.wav"},
-        {"source_file": "alarm2.wav", "target_file": "alarm2.wav"},
-        {"source_file": "alarm3.wav", "target_file": "alarm3.wav"},
-        {"source_file": "alarm4.wav", "target_file": "alarm4.wav"},
-        {"source_file": "alarm5.wav", "target_file": "alarm5.wav"}
+        {
+          "source_file": "alarm1.wav",
+          "target_file": "alarm1.wav"
+        },
+        {
+          "source_file": "alarm2.wav",
+          "target_file": "alarm2.wav"
+        },
+        {
+          "source_file": "alarm3.wav",
+          "target_file": "alarm3.wav"
+        },
+        {
+          "source_file": "alarm4.wav",
+          "target_file": "alarm4.wav"
+        },
+        {
+          "source_file": "alarm5.wav",
+          "target_file": "alarm5.wav"
+        }
       ]
     }
   ]

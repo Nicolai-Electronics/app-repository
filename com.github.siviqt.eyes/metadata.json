@@ -4,7 +4,7 @@
   "categories": [
     "Fun"
   ],
-  "version": "0.5.4",
+  "version": "0.6.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -26,6 +26,10 @@
         {
           "source_file": "plugin.json",
           "target_file": "plugin.json"
+        },
+        {
+          "source_file": "eyes.cfg",
+          "target_file": "eyes.cfg"
         },
         {
           "source_file": "LICENSE",

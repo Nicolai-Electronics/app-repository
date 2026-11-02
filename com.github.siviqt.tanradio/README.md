@@ -27,12 +27,19 @@ preserved. Saved stations are stored at `/sd/tanradio/stations.txt`.
 | Hyper (between left Ctrl and Alt) | Open or close About |
 
 About shows the application version/revision, firmware build, ESP-IDF and
-BSP/LCD/ES8156 versions, build time and build ID. Esc or F2 also closes it.
+BSP/LCD/ES8156 versions, detected display variant and panel ID, build time and
+build ID. Esc or F2 also closes it.
 
 Playback supports 16-bit mono/stereo MP3 at 44.1 or 48 kHz. Speaker and headphone
-volume settings are remembered independently. The app uses BSP 1.6.2 with
-TanRadio's tested audio, display and input fixes, LCD abstraction 1.1.0 and
+volume settings are remembered independently. The app uses BSP 2.0.0 with
+TanRadio's retained audio, display and input fixes, LCD abstraction 2.0.0 and
 ES8156 0.1.0, built with ESP-IDF 6.0.2.
+
+One binary selects the SDK's original or v2 display initialization sequence
+automatically. Saved VCOM calibration retains precedence over either default.
+The local cache correction adds no display or persistent writes. This upgrade
+passes the host regression suite, and the owner reports expected operation on
+their existing v1 device. Hardware validation on v2 remains pending.
 
 The matching version and AppFS revision are recorded in `metadata.json`.
 The included `TanRadio.bin` is an AppFS application image. Install it through
