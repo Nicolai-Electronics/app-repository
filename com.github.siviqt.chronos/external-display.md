@@ -66,6 +66,9 @@ Unsupported glyphs are simplified to question marks by the display renderer.
 
 ## Nokia hardware
 
+Ported without protocol changes from
+the supplied Nokia 5110 module 1.0.0:
+
 | Signal | CATT physical pin | ESP32-P4 GPIO default |
 |---|---:|---:|
 | RST | 8 | 5 |
@@ -95,7 +98,7 @@ exists in this BSP; the supported native application must own these pins.
 
 The actual module is **Nicolai Electronics NE-HCS12SS59T-R1**, using a Samsung
 HCS-12SS59T 12-character VFD behind its custom I²C controller board. The protocol
-is adapted from `external_display_driver/I2C_VFD/main.c` and the supplied module
+is adapted from the supplied Nicolai Electronics I2C VFD example and the supplied module
 PDF, not from a generic VFD controller.
 
 - 3.3 V QWIIC/Stemma QT I²C; **100 kHz**.
@@ -115,9 +118,49 @@ PDF, not from a generic VFD controller.
   supported by module firmware v2; firmware v1 ignores it.
 - Probe deadline 20 ms; transfer deadline 50 ms; shared-bus claim deadline 20 ms.
 
-The pinned Chronos BSP lacks the newer CATT API. The local transport adapts the
-newer SDK's `badge_bsp_catt.c` bus settings. It creates CATT only when enabled,
-refuses an already-owned host instead of assuming its wiring, and deletes only
-its own CATT bus. No managed component or SDK source is modified. Bus, address
+BSP 1.6.2 attempts CATT I2C initialization during board startup, including when
+the external display feature is disabled. The transport borrows its bus through
+`bsp_catt_i2c_bus_get_handle`; an explicit open/retry may re-enable it through
+the BSP if startup failed. Closing removes only the VFD device handle and never
+deletes the BSP bus. Disabled external output still starts no display worker,
+device probes or periodic transfers. No managed component or SDK source is
+modified. Bus, address
 and current are editable; fixed module dimensions, clock and board bus pins are
 shown as information instead of meaningless configurable fields.
+
+## Architecture and checks
+
+`chronos_app/features/external.c` projects runtime snapshots and owns content
+priority. Stable source IDs are separate from UI tab positions. World timezone
+conversion stays on the application task and restores the local zone before
+alarms run again. Invalid external hardware values loaded from INI are retained
+and isolated as Configuration error; they do not discard other Chronos settings.
+
+`external_display` provides a driver lifecycle interface, a latest-value mailbox
+and a single worker that owns drivers and transports. Submission does not wait
+for I/O. Hardware configuration changes and explicit retry advance a generation;
+content changes do not reopen a healthy device. Errors close the device and
+latch failure. Shutdown waits at most 500 ms for a graceful worker acknowledgment;
+it never forcibly deletes a task while it could own a shared bus lock.
+
+`nokia5110` retains the supplied portable controller, canvas/font, GPIO transport
+and MIT license. `external_display/src/vfd.c` implements the real module registers;
+`vfd_transport.c` handles board bus ownership and synchronization.
+
+Verified in this workspace:
+
+- `make build`: ESP-IDF 6.0.2 / ESP32-P4 firmware build.
+- `make test-host`: existing application, timing, alarms, audio, settings and UI tests.
+- `make test-external`: selection/fallback, fixed idle states, unknown IDs,
+  persistence, Settings drafts, validation, disabled startup, worker allocation
+  failures, latest-frame coalescing, bounded retry, cleanup, Nokia controller/font,
+  exact VFD register bytes, bus wiring, locks and transport failure injection.
+- `make test-render`: existing internal-display pixel/layout regression tests.
+
+Hardware checks for CHRONOS 1.2.0 revision 6 passed, as confirmed by the user
+on 2026-11-02.
+
+For future regressions, test both drivers, navigate internal tabs while fixed
+Stopwatch is selected, trigger/dismiss an alarm over a running session, exercise
+VFD disconnect/reconnect and Retry, and reboot to check persistence. Nokia
+connection/disconnection remains unverifiable through its write-only protocol.
