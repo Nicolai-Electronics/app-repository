@@ -5,7 +5,7 @@
     "games",
     "tools"
   ],
-  "version": "1.3.3",
+  "version": "1.4.3365-dev",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -20,8 +20,8 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 7,
-      "bsp_version": 1,
+      "revision": 8,
+      "bsp_version": 2,
       "type": "appfs",
       "executable": "tic80.bin"
     }
