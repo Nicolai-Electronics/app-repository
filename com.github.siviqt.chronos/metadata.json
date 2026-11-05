@@ -1,6 +1,7 @@
 {
   "name": "CHRONOS",
   "description": "Time keeping app with complications",
+  "repository_url": "https://github.com/siviqt/Chronos",
   "categories": [
     "tools"
   ],

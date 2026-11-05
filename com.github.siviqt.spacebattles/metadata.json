@@ -1,6 +1,7 @@
 {
   "name": "Spacebattles",
   "description": "Remake of Battleships board game",
+  "repository_url": "https://github.com/siviqt/SpaceBattles",
   "categories": [
     "games"
   ],

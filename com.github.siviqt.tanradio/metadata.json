@@ -1,6 +1,7 @@
 {
   "name": "TanRadio",
   "description": "Internet radio player for Tanmatsu",
+  "repository_url": "https://github.com/siviqt/TanRadio",
   "categories": [
     "media"
   ],
