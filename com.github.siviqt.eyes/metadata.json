@@ -1,10 +1,11 @@
 {
   "name": "Eyes",
   "description": "Motion activated mood and personality widget.",
+  "repository_url": "https://github.com/siviqt/Eyes-plugin",
   "categories": [
     "Fun"
   ],
-  "version": "0.6.0",
+  "version": "0.6.1",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -19,7 +20,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 1,
+      "revision": 2,
       "type": "plugin",
       "executable": "eyes.plugin",
       "assets": [
