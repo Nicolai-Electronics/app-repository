@@ -1,10 +1,11 @@
 {
   "name": "Spacebattles",
   "description": "Remake of Battleships board game",
+  "repository_url": "https://github.com/siviqt/SpaceBattles",
   "categories": [
     "games"
   ],
-  "version": "0.4.0",
+  "version": "0.4.1",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -19,7 +20,7 @@
         "tanmatsu",
         "konsool"
       ],
-      "revision": 8,
+      "revision": 9,
       "bsp_version": 2,
       "type": "appfs",
       "executable": "spacebattles.bin",

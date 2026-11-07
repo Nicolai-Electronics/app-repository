@@ -1,10 +1,11 @@
 {
   "name": "TanRadio",
   "description": "Internet radio player for Tanmatsu",
+  "repository_url": "https://github.com/siviqt/TanRadio",
   "categories": [
     "media"
   ],
-  "version": "0.8.4",
+  "version": "0.8.5",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -17,7 +18,7 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 15,
+      "revision": 16,
       "bsp_version": 2,
       "type": "appfs",
       "executable": "TanRadio.bin",
