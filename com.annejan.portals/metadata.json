@@ -1,10 +1,11 @@
 {
   "name": "Portals",
-  "description": "Portal puzzles in twenty test chambers and stories",
+  "description": "Portal puzzles in twenty-one test chambers and stories",
+  "repository_url": "https://github.com/annejan/tanmatsu-portals-grace",
   "categories": [
     "games"
   ],
-  "version": "0.13.5",
+  "version": "0.14.0",
   "icon": {
     "16x16": "icon16.png",
     "32x32": "icon32.png",
@@ -62,6 +63,10 @@
         {
           "source_file": "textures/field.png",
           "target_file": "textures/field.png"
+        },
+        {
+          "source_file": "textures/companion.png",
+          "target_file": "textures/companion.png"
         }
       ]
     }
