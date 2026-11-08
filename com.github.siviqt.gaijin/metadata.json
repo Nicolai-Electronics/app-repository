@@ -2,7 +2,7 @@
   "name": "Gaijin",
   "description": "Native Linux with local and USB consoles and persistent SD state for Tanmatsu rev7.",
   "repository_url": "https://github.com/siviqt/Gaijin",
-  "version": "0.5.18",
+  "version": "0.5.19",
   "author": "Gaijin contributors",
   "categories": [
     "system"
@@ -21,7 +21,7 @@
       ],
       "type": "appfs",
       "executable": "linux-loader.bin",
-      "revision": 32,
+      "revision": 33,
       "external_only": true,
       "assets": [
         {
@@ -63,34 +63,6 @@
         {
           "source_file": "THIRD_PARTY.md",
           "target_file": "THIRD_PARTY.md"
-        },
-        {
-          "source_file": "LICENSES/Apache-2.0.txt",
-          "target_file": "LICENSES/Apache-2.0.txt"
-        },
-        {
-          "source_file": "LICENSES/BSD-2-Clause.txt",
-          "target_file": "LICENSES/BSD-2-Clause.txt"
-        },
-        {
-          "source_file": "LICENSES/GCC-Runtime-Exception-3.1.txt",
-          "target_file": "LICENSES/GCC-Runtime-Exception-3.1.txt"
-        },
-        {
-          "source_file": "LICENSES/GPL-2.0.txt",
-          "target_file": "LICENSES/GPL-2.0.txt"
-        },
-        {
-          "source_file": "LICENSES/GPL-3.0.txt",
-          "target_file": "LICENSES/GPL-3.0.txt"
-        },
-        {
-          "source_file": "LICENSES/LGPL-2.1.txt",
-          "target_file": "LICENSES/LGPL-2.1.txt"
-        },
-        {
-          "source_file": "LICENSES/Tanmatsu-coprocessor-MIT.txt",
-          "target_file": "LICENSES/Tanmatsu-coprocessor-MIT.txt"
         },
         {
           "source_file": "icon16.png",

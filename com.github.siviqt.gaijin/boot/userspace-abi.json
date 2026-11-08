@@ -1,12 +1,12 @@
 {
   "abi": "gaijin-rv32imac-ilp32-le-bflt4-static-uclibc-v1",
-  "compressed_bytes": 649242,
+  "compressed_bytes": 649219,
   "unpacked_bytes": 1089536,
-  "archive_sha256": "da284ca66bf2dab86172c4f0be0bd279e119adca908cec59ea3c3b5e4f32ebb4",
+  "archive_sha256": "27ac13b46a75455b81d0734c5a6aa41c79e71d508db4bc3a75c8534532c53936",
   "binaries": {
     "bin/busybox": {
-      "bytes": 588124,
-      "bss_end": 596752,
+      "bytes": 588084,
+      "bss_end": 596704,
       "stack": 65536,
       "relocations": 533,
       "flags": 3
@@ -51,7 +51,7 @@
     {
       "path": "busybox_unstripped.gdb",
       "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
-      "sha256": "b6cf4ab6d3fabf58d374b19beaa80487ee5c35b359941fd3b5002fd860a770bf"
+      "sha256": "1136e717bb8d4ade130a9fcda628f09a3d24d2af823739cadd153aeafa140818"
     },
     {
       "path": "gaijin-abi-check.gdb",
@@ -83,7 +83,7 @@
   "hardware_validated": false,
   "rootfs": {
     "bytes": 659456,
-    "sha256": "88889dd1cd582aa1380c2aee721b89953e51510da2582d8c6fc818730e62ef23",
+    "sha256": "dd3ccba4f0c95dd418fc5662f888ef02ce0b60370b89f73866f0db5363e9e747",
     "block_size": 32768,
     "compression": "gzip"
   }
