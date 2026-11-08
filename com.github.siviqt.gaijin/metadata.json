@@ -1,6 +1,7 @@
 {
   "name": "Gaijin",
   "description": "Native Linux with local and USB consoles and persistent SD state for Tanmatsu rev7.",
+  "repository_url": "https://github.com/siviqt/Gaijin",
   "version": "0.5.18",
   "author": "Gaijin contributors",
   "categories": [
@@ -9,9 +10,9 @@
   "license_type": "MIT",
   "license_file": "LICENSE",
   "icon": {
-    "16x16": "icons/penguin/icon16.png",
-    "32x32": "icons/penguin/icon32.png",
-    "64x64": "icons/penguin/icon64.png"
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
   },
   "application": [
     {
@@ -88,43 +89,18 @@
           "target_file": "LICENSES/Tanmatsu-coprocessor-MIT.txt"
         },
         {
-          "source_file": "icons/terminal/icon16.png",
-          "target_file": "icons/terminal/icon16.png"
+          "source_file": "icon16.png",
+          "target_file": "icon16.png"
         },
         {
-          "source_file": "icons/terminal/icon32.png",
-          "target_file": "icons/terminal/icon32.png"
+          "source_file": "icon32.png",
+          "target_file": "icon32.png"
         },
         {
-          "source_file": "icons/terminal/icon64.png",
-          "target_file": "icons/terminal/icon64.png"
-        },
-        {
-          "source_file": "icons/penguin/icon16.png",
-          "target_file": "icons/penguin/icon16.png"
-        },
-        {
-          "source_file": "icons/penguin/icon32.png",
-          "target_file": "icons/penguin/icon32.png"
-        },
-        {
-          "source_file": "icons/penguin/icon64.png",
-          "target_file": "icons/penguin/icon64.png"
-        },
-        {
-          "source_file": "icons/g-chip/icon16.png",
-          "target_file": "icons/g-chip/icon16.png"
-        },
-        {
-          "source_file": "icons/g-chip/icon32.png",
-          "target_file": "icons/g-chip/icon32.png"
-        },
-        {
-          "source_file": "icons/g-chip/icon64.png",
-          "target_file": "icons/g-chip/icon64.png"
+          "source_file": "icon64.png",
+          "target_file": "icon64.png"
         }
       ]
     }
-  ],
-  "repository_url": "https://github.com/siviqt/Gaijin"
+  ]
 }
