@@ -1,6 +1,6 @@
 {
     "name": "USB CDC serial port",
-    "description": "USB to serial port converter, exposes UART pins on the CATT port",
+    "description": "USB to serial port converter - exposes UART pins on the CATT port",
     "repository_url": "https://github.com/Nicolai-Electronics/tanmatsu-usb-cdc-app",
     "categories": [
         "hardware"
