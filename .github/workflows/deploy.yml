@@ -29,6 +29,7 @@ jobs:
           remote-user:   ${{ vars.SSH_USER }}
           private-ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           destination-path: ${{ vars.WEBROOT }}
+          rsync-options: "--archive --verbose --compress --human-readable --progress --delete-after"
       - name: Execute remote SSH commands using password
         uses: appleboy/ssh-action@v1
         with:
