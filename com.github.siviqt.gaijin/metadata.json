@@ -1,0 +1,130 @@
+{
+  "name": "Gaijin",
+  "description": "Native Linux with local and USB consoles and persistent SD state for Tanmatsu rev7.",
+  "version": "0.5.18",
+  "author": "Gaijin contributors",
+  "categories": [
+    "system"
+  ],
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "icon": {
+    "16x16": "icons/penguin/icon16.png",
+    "32x32": "icons/penguin/icon32.png",
+    "64x64": "icons/penguin/icon64.png"
+  },
+  "application": [
+    {
+      "targets": [
+        "tanmatsu"
+      ],
+      "type": "appfs",
+      "executable": "linux-loader.bin",
+      "revision": 32,
+      "external_only": true,
+      "assets": [
+        {
+          "source_file": "LICENSE",
+          "target_file": "LICENSE"
+        },
+        {
+          "source_file": "boot/manifest.bin",
+          "target_file": "boot/manifest.bin"
+        },
+        {
+          "source_file": "boot/Image",
+          "target_file": "boot/Image"
+        },
+        {
+          "source_file": "boot/tanmatsu.dtb",
+          "target_file": "boot/tanmatsu.dtb"
+        },
+        {
+          "source_file": "boot/initramfs",
+          "target_file": "boot/initramfs"
+        },
+        {
+          "source_file": "boot/rootfs.sqfs",
+          "target_file": "boot/rootfs.sqfs"
+        },
+        {
+          "source_file": "boot/rootfs.sqfs.sha256",
+          "target_file": "boot/rootfs.sqfs.sha256"
+        },
+        {
+          "source_file": "boot/userspace-abi.json",
+          "target_file": "boot/userspace-abi.json"
+        },
+        {
+          "source_file": "THIRD_PARTY.md",
+          "target_file": "THIRD_PARTY.md"
+        },
+        {
+          "source_file": "LICENSES/Apache-2.0.txt",
+          "target_file": "LICENSES/Apache-2.0.txt"
+        },
+        {
+          "source_file": "LICENSES/BSD-2-Clause.txt",
+          "target_file": "LICENSES/BSD-2-Clause.txt"
+        },
+        {
+          "source_file": "LICENSES/GCC-Runtime-Exception-3.1.txt",
+          "target_file": "LICENSES/GCC-Runtime-Exception-3.1.txt"
+        },
+        {
+          "source_file": "LICENSES/GPL-2.0.txt",
+          "target_file": "LICENSES/GPL-2.0.txt"
+        },
+        {
+          "source_file": "LICENSES/GPL-3.0.txt",
+          "target_file": "LICENSES/GPL-3.0.txt"
+        },
+        {
+          "source_file": "LICENSES/LGPL-2.1.txt",
+          "target_file": "LICENSES/LGPL-2.1.txt"
+        },
+        {
+          "source_file": "LICENSES/Tanmatsu-coprocessor-MIT.txt",
+          "target_file": "LICENSES/Tanmatsu-coprocessor-MIT.txt"
+        },
+        {
+          "source_file": "icons/terminal/icon16.png",
+          "target_file": "icons/terminal/icon16.png"
+        },
+        {
+          "source_file": "icons/terminal/icon32.png",
+          "target_file": "icons/terminal/icon32.png"
+        },
+        {
+          "source_file": "icons/terminal/icon64.png",
+          "target_file": "icons/terminal/icon64.png"
+        },
+        {
+          "source_file": "icons/penguin/icon16.png",
+          "target_file": "icons/penguin/icon16.png"
+        },
+        {
+          "source_file": "icons/penguin/icon32.png",
+          "target_file": "icons/penguin/icon32.png"
+        },
+        {
+          "source_file": "icons/penguin/icon64.png",
+          "target_file": "icons/penguin/icon64.png"
+        },
+        {
+          "source_file": "icons/g-chip/icon16.png",
+          "target_file": "icons/g-chip/icon16.png"
+        },
+        {
+          "source_file": "icons/g-chip/icon32.png",
+          "target_file": "icons/g-chip/icon32.png"
+        },
+        {
+          "source_file": "icons/g-chip/icon64.png",
+          "target_file": "icons/g-chip/icon64.png"
+        }
+      ]
+    }
+  ],
+  "repository_url": "https://github.com/siviqt/Gaijin"
+}
