@@ -1,0 +1,90 @@
+{
+  "abi": "gaijin-rv32imac-ilp32-le-bflt4-static-uclibc-v1",
+  "compressed_bytes": 649242,
+  "unpacked_bytes": 1089536,
+  "archive_sha256": "da284ca66bf2dab86172c4f0be0bd279e119adca908cec59ea3c3b5e4f32ebb4",
+  "binaries": {
+    "bin/busybox": {
+      "bytes": 588124,
+      "bss_end": 596752,
+      "stack": 65536,
+      "relocations": 533,
+      "flags": 3
+    },
+    "usr/bin/gaijin-abi-check": {
+      "bytes": 46816,
+      "bss_end": 55392,
+      "stack": 16384,
+      "relocations": 32,
+      "flags": 3
+    },
+    "usr/bin/m5-umode-probe": {
+      "bytes": 30868,
+      "bss_end": 39440,
+      "stack": 16384,
+      "relocations": 29,
+      "flags": 3
+    },
+    "usr/bin/m2-input-test": {
+      "bytes": 44128,
+      "bss_end": 52704,
+      "stack": 16384,
+      "relocations": 31,
+      "flags": 3
+    },
+    "sbin/gaijin-state-map": {
+      "bytes": 62508,
+      "bss_end": 95696,
+      "stack": 32768,
+      "relocations": 31,
+      "flags": 3
+    },
+    "sbin/gaijin-power": {
+      "bytes": 47356,
+      "bss_end": 55968,
+      "stack": 32768,
+      "relocations": 31,
+      "flags": 3
+    }
+  },
+  "elf_intermediates": [
+    {
+      "path": "busybox_unstripped.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "b6cf4ab6d3fabf58d374b19beaa80487ee5c35b359941fd3b5002fd860a770bf"
+    },
+    {
+      "path": "gaijin-abi-check.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "773d774a20cd28cf4bb822127b874c7f8b98f7b738961e89e7b9440ea5f54ef1"
+    },
+    {
+      "path": "m5-umode-probe.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "e8a214121df45959a05ccf9d1a08fcdbd938205365efdc06251d0721a7ea3bbf"
+    },
+    {
+      "path": "m2-input-test.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "098a72d0592343a34824a90d8789a548e5eead60c7187a2525de6ee2a946ec7a"
+    },
+    {
+      "path": "gaijin-state-map.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "eea8dea498c4627fa3c84dd94b7475a176963426279131d6b1ad3955399beaef"
+    },
+    {
+      "path": "gaijin-power.gdb",
+      "isa": "rv32i2p1_m2p0_a2p1_c2p0_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0",
+      "sha256": "9dce9f9697776ea692966c9c67b94b46874883f6211487ad0a275c857cce19c0"
+    }
+  ],
+  "shell": "hush",
+  "hardware_validated": false,
+  "rootfs": {
+    "bytes": 659456,
+    "sha256": "88889dd1cd582aa1380c2aee721b89953e51510da2582d8c6fc818730e62ef23",
+    "block_size": 32768,
+    "compression": "gzip"
+  }
+}
