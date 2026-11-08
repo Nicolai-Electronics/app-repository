@@ -25,6 +25,10 @@
       "external_only": true,
       "assets": [
         {
+          "source_file": "README.md",
+          "target_file": "README.md"
+        },
+        {
           "source_file": "LICENSE",
           "target_file": "LICENSE"
         },
