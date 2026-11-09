@@ -2,9 +2,7 @@
     "name": "MeshCore",
     "description": "LoRa-mesh chat with DM channels nodes GPS and QR.",
     "categories": [
-        "tools",
-        "utils",
-        "hardware"
+        "communication"
     ],
     "version": "3.8.0",
     "icon": {

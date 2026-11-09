@@ -2,8 +2,7 @@
   "name": "SSHmatsu",
   "description": "SSH client for Tanmatsu. Interactive shell over WiFi with keyboard and terminal display.",
   "categories": [
-    "communication",
-    "utils"
+    "communication"
   ],
   "version": "1.0.0",
   "icon": {

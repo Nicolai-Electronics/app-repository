@@ -2,7 +2,7 @@
   "name": "MusicPlayer",
   "description": "Audio player with visualizers and Last.fm scrobbling",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "version": "0.1.0",
   "icon": {

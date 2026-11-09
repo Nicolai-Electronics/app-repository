@@ -2,7 +2,8 @@
   "name": "Kodi Remote",
   "description": "Kodi remote with media library and now playing information",
   "categories": [
-    "media"
+    "multimedia",
+    "tools"
   ],
   "version": "0.2.0",
   "icon": {

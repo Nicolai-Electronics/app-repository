@@ -2,7 +2,7 @@
   "name": "Disc-O-Matsu",
   "description": "USB CD and DVD audio player for Tanmatsu",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "version": "0.2.0",
   "icon": {

@@ -2,7 +2,7 @@
     "name": "Trackmatsu",
     "description": "Tracker and VGM music player",
     "categories": [
-        "media"
+        "multimedia"
     ],
     "version": "0.0.2",
     "icon": {

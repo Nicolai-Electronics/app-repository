@@ -2,7 +2,7 @@
     "name": "Matter comms",
     "description": "Commission and control Matter/Thread devices github.com/Z6543/tanmatsu-matter/",
     "categories": [
-        "utils"
+        "communication"
     ],
     "version": "1.0.5",
     "icon": {

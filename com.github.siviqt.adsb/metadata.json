@@ -3,7 +3,7 @@
   "description": "Aircraft map and radar with arrivals and statistics",
   "repository_url": "https://github.com/siviqt/ADS-B_Radar",
   "categories": [
-    "Tools"
+    "tools"
   ],
   "version": "0.3.3",
   "icon": {

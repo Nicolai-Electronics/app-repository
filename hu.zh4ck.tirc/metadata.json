@@ -2,7 +2,7 @@
     "name": "T-IRC",
     "description": "Minimal IRC client",
     "categories": [
-        "utils"
+        "communication"
     ],
     "version": "1.0.0",
     "icon": {

@@ -2,7 +2,6 @@
     "name": "Neiro",
     "description": "8-voice Juno-style virtual-analog polyphonic synthesizer. Play via USB MIDI / DAW / badge keyboard.",
     "categories": [
-        "music",
         "multimedia"
     ],
     "version": "1.0.0",
