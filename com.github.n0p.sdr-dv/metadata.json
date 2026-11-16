@@ -1,0 +1,30 @@
+{
+    "name": "SDR DMR/TETRA",
+    "description": "RTL-SDR receiver with spectrum and waterfall - NFM / AM / SSB / WFM - DMR and TETRA decoding",
+    "repository_url": "https://github.com/n0p/tanmatsu-sdr-dv",
+    "categories": [
+        "tools",
+        "communication"
+    ],
+    "version": "0.1.1",
+    "icon": {
+        "16x16": "icon16.png",
+        "32x32": "icon32.png",
+        "64x64": "icon64.png"
+    },
+    "author": "n0p",
+    "license_type": "AGPL-3.0-only",
+    "license_file": "LICENSE",
+    "application": [
+        {
+            "targets": [
+                "tanmatsu",
+                "konsool"
+            ],
+            "revision": 1,
+            "bsp_version": 1,
+            "type": "appfs",
+            "executable": "application.bin"
+        }
+    ]
+}
