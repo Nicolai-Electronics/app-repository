@@ -1,0 +1,87 @@
+Vendored subset of osmo-tetra (Osmocom TETRA MAC/PHY layer experimentation code)
+
+Upstream:  https://gitea.osmocom.org/tetra/osmo-tetra.git
+Commit:    59fb603999ca1c0302366e07253fd65b2d1fe7ca (master)
+Licence:   GNU Affero General Public License, version 3 or (at your option) any
+           later version -- see COPYING and the header of every file. Authors:
+           see AUTHORS. The licence headers of all files are unchanged.
+
+What is here
+------------
+src/lower_mac/  crc_simple.[ch], tetra_conv_enc.[ch], tetra_interleave.[ch],
+                tetra_rm3014.[ch], tetra_scramb.[ch], tch_reordering.c
+src/phy/        tetra_burst.[ch]
+src/            tetra_common.[ch], tetra_mac_pdu.[ch], tetra_llc_pdu.[ch],
+                tetra_mle_pdu.[ch], tetra_mm_pdu.[ch], tetra_cmce_pdu.[ch],
+                tetra_sndcp_pdu.[ch], tetra_tdma.h
+compat/osmocom/core/utils.h
+                NOT from libosmocore: a stand-in written for this component
+                with the few helpers the files above use (value_string lookup,
+                ARRAY_SIZE). No libosmocore code is vendored.
+
+Not vendored (replaced by code in ../../src, written for this component):
+the demodulator (GNU Radio flow graphs, float_to_bits), tetra_burst_sync.c,
+the Viterbi decoders (viterbi*.c, libosmocore conv), tetra_lower_mac.c,
+tetra_upper_mac.c, tetra_llc.c (msgb/talloc reassembly), tetra_tdma.c, the
+crypto/ directory, tetra_gsmtap.c, the codec/ directory and all programs.
+
+Changes to the vendored files
+-----------------------------
+Unmodified: crc_simple.[ch], tetra_conv_enc.h, tetra_interleave.h,
+tetra_scramb.[ch], tetra_cmce_pdu.[ch], tetra_mac_pdu.h, tetra_mle_pdu.h,
+tetra_mm_pdu.h, tetra_sndcp_pdu.h, tetra_tdma.h.
+
+lower_mac/tch_reordering.c
+  - class0_positions[]: third entry of the row "41, 42, 33" corrected to 43
+    (33 appeared twice), and the missing last entry 64 added (the table had
+    50 of its 51 entries). Both follow EN 300 395-2 table 4 and make the
+    type-1 -> codec bit mapping a bijection (checked in host/test_unit.c).
+lower_mac/tetra_conv_enc.c
+  - dump_state() only compiled with DEBUG (it is only used by DEBUGP).
+  - signed/unsigned comparison fixes (-Wextra).
+  - the puncturer self test (test_one_punct, tetra_punct_test: printf, malloc)
+    is only compiled with TETRA_CONV_ENC_SELFTEST.
+lower_mac/tetra_interleave.c
+  - loop counters made uint32_t (-Wextra sign comparison).
+lower_mac/tetra_rm3014.c / .h
+  - printf of the generator matrix rows in tetra_rm3014_init() removed.
+  - prototype typo tetra_rm3013_decode -> tetra_rm3014_decode.
+phy/tetra_burst.c / .h
+  - phase2bits[]: entries for -1 and +3 were swapped relative to bits2phase[]
+    and EN 300 392-2 table 5.1; the table was indexed without the PHASE()
+    offset (out of bounds for negative phase adjustments). Fixed; this only
+    affects the phase adjustment bits of the burst builders (used by the test
+    signal generator), not reception.
+  - printf in sum_up_phase() removed; sum_up_phase() exported.
+  - unused uplink / 3-bit-per-symbol tables put under #if 0; (size_t) casts
+    and (void) len for -Wextra.
+  - added tetra_burst_train_seq_bits() and tetra_burst_freq_corr_bits():
+    read-only access to the training sequence tables for the soft-decision
+    burst synchroniser in ../../src/tetra_modem.c.
+  - tetra_burst_rx_cb() (upstream code, it splits one burst into its blocks
+    and calls tp_sap_udata_ind()) is declared in the header; it is called
+    with int8 soft bits instead of hard bits and tp_sap_udata_ind() is
+    implemented in ../../src/tetra_lmac.c.
+tetra_common.c / .h
+  - struct tetra_phy_state, struct tetra_mac_state, the global t_phy_state,
+    tetra_mac_state_init() and tetra_get_sap_name() removed (all receiver
+    state is per instance in ../../src/tetra_ctx.h); includes of
+    linuxlist.h, bits.h and tetra_prim.h removed.
+  - duplex spacing made int32_t (the table holds negative values).
+tetra_llc_pdu.c / .h
+  - printf("WARNING llc pdu too small ...") removed (the caller gets the
+    error through the parsed structure).
+  - loop counter type; llist/msgb based struct tllc_state and
+    struct tllc_defrag_q_e removed.
+tetra_mac_pdu.c
+  - tetra_addr_dump() (sprintf into a static buffer) is only compiled with
+    TETRA_ADDR_DUMP; its %u arguments are cast for targets where uint32_t is
+    unsigned long.
+tetra_mle_pdu.c, tetra_mm_pdu.c, tetra_sndcp_pdu.c
+  - "(void) uplink;" for -Wextra.
+
+With these changes the vendored files reference no stdio function, do not
+allocate, and keep no state between calls apart from two constant tables
+filled in on first use: rm_30_14_rows[] (tetra_rm3014_init(), called from
+tetra_rx_create()) and tsq_bytes[] in tetra_find_train_seq() (hard-decision
+training sequence search; not called by the library).
