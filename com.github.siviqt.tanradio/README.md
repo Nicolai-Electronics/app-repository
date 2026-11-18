@@ -1,15 +1,24 @@
 # TanRadio
 
-TanRadio is an Internet radio player for Tanmatsu. It plays direct MP3 streams
-and searches the Radio Browser directory by station name or country. Now
-Playing shows ICY track information when the stream provides it and scrolls
-long labels. Station logos can come from the SD card or an opt-in Radio Browser
-lookup.
+TanRadio 0.9.0 (AppFS revision 17) is an Internet radio player for Tanmatsu. It
+plays MP3, AAC/AAC+, Ogg Opus and Vorbis, native FLAC, and unencrypted audio-only
+HLS over MPEG-TS or packed ADTS/MP3. Now Playing shows ICY track information when
+the stream provides it and scrolls long labels. Station logos can come from the
+SD card or an opt-in Radio Browser lookup.
 
 Configure Wi-Fi in the launcher and insert an SD card. Press Space on the
 welcome screen to start. TanRadio begins with an empty station list; press F2
 to find stations, then F5 to save a result. Existing station catalogs are
 preserved. Saved stations are stored at `/sd/tanradio/stations.txt`.
+
+## Find stations
+
+Press **F2** to open Radio Browser search, then use **Tab** to switch between
+station name and country. Enter a name or a country code such as `BG`, then
+press **Enter**. Use **Up/Down** to browse alphabetical results as pages load.
+The footer marks **Start of results**, **End of results**, or **Only result**
+at a confirmed boundary. **F4** previews and **F5** saves the highlighted
+station. Press **Enter** to retry a failed page.
 
 ## Controls
 
@@ -23,7 +32,7 @@ preserved. Saved stations are stored at `/sd/tanradio/stations.txt`.
 | F2 | Open station search; close search or About |
 | Tab in search | Switch between station name and country |
 | F3 | Stop playback |
-| F4 | Play, mute or unmute |
+| F4 | Play, mute or unmute. Preview the selected search result |
 | F5 | Play next saved station; save selected result in search |
 | Backspace | Confirm removal of a saved station; edit text in search |
 | F6 / Power | Toggle screen and keyboard illumination |
@@ -42,6 +51,8 @@ edits.
 
 - **LED brightness** controls the RGB status LEDs from 0% to 100% in
   5 percentage-point steps. The default is 50%.
+- **Theme** switches the built-in screen between Midnight and Vivid.
+  **F4 Apply** saves the selected theme for the next launch.
 - **External display** defaults to Off. Select **Nokia 5110** to show
   the station, track, playback state, battery and volume on a PCD8544 LCD.
   Contrast defaults to 60.
@@ -56,8 +67,10 @@ external JTAG adapter while using the display.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | CATT physical pin | 8 | 5 | 7 | 10 | 9 | 1 | 2 |
 
-Playback supports 16-bit mono/stereo MP3 at 44.1 or 48 kHz. Speaker and headphone
-volume settings are remembered independently. The app uses BSP 2.0.0 with
+Playback accepts signed 16-bit mono/stereo PCM at 8–48 kHz. It plays 44.1 and
+48 kHz at their native rates and resamples other supported rates to 48 kHz.
+Speaker and headphone volume settings are remembered independently.
+The app uses BSP 2.0.0 with
 TanRadio's retained audio, display and input fixes, LCD abstraction 2.0.0 and
 ES8156 0.1.0, built with ESP-IDF 6.0.2.
 
