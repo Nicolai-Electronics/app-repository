@@ -1,6 +1,6 @@
 # TanRadio
 
-TanRadio 0.9.0 (AppFS revision 17) is an Internet radio player for Tanmatsu. It
+TanRadio 0.9.1 (AppFS revision 18) is an Internet radio player for Tanmatsu. It
 plays MP3, AAC/AAC+, Ogg Opus and Vorbis, native FLAC, and unencrypted audio-only
 HLS over MPEG-TS or packed ADTS/MP3. Now Playing shows ICY track information when
 the stream provides it and scrolls long labels. Station logos can come from the
@@ -22,32 +22,38 @@ station. Press **Enter** to retry a failed page.
 
 ## Controls
 
+The on-screen shortcuts use the Tanmatsu function-key and Backspace symbols.
+
 | Key | Action |
 | --- | --- |
 | Up / Down | Select station or search result |
 | Enter | Play selected station; submit a search in the search dialog |
-| F1 | Open Options / Exit. Press F1 again to stop playback and return to the launcher |
-| Esc / F2 in Options | Cancel and return to the previous screen |
-| F3 in Options | Open TanRadio Settings |
-| F2 | Open station search; close search or About |
+| F1 · red cross | Open Options / Exit. Press again to stop playback and return to the launcher |
+| F2 · orange triangle in Options | Cancel and return to the previous screen |
+| F3 · yellow square in Options | Open TanRadio Settings |
+| F2 · orange triangle | Open station search or close search and About |
 | Tab in search | Switch between station name and country |
-| F3 | Stop playback |
-| F4 | Play, mute or unmute. Preview the selected search result |
-| F5 | Play next saved station; save selected result in search |
-| Backspace | Confirm removal of a saved station; edit text in search |
-| F6 / Power | Toggle screen and keyboard illumination |
+| F3 · yellow square | Stop playback |
+| F4 · green circle | Play, mute or unmute. Preview the selected search result |
+| F5 · cyan three-lobed symbol | Play the next saved station or save the selected result in search |
+| Backspace · ⌫ | Open the removal confirmation for a saved station or delete a character in search |
+| F6 · purple diamond / Power | Toggle screen and keyboard illumination |
 | Volume keys | Adjust the current output's saved volume |
 | Hyper (between left Ctrl and Alt) | Open or close About |
 
 About shows the application version/revision, firmware build, ESP-IDF and
 BSP/LCD/ES8156 versions, detected display variant and panel ID, build time and
-build ID. Esc or F2 also closes it.
+build ID. The orange triangle labels **Close**. Esc and Hyper also close About.
+
+When **⌫ Remove** is visible, press Backspace to open the confirmation. Press
+the green circle to remove the station or the orange triangle to cancel.
 
 ## Settings
 
-Open **F1 → F3**. Use **Up/Down** to select a setting and **Left/Right**
-to change it. Press **F4 Apply** to save or **F2 / Esc** to discard unapplied
-edits.
+Press the **red cross (F1)** and then the **yellow square (F3)**. Use
+**↑ ↓ Select** to choose a setting and **← → Edit** to change it. The
+**green circle (F4)** applies settings and the **orange triangle (F2)** goes
+back. F2 and Esc discard unapplied edits.
 
 - **LED brightness** controls the RGB status LEDs from 0% to 100% in
   5 percentage-point steps. The default is 50%.
