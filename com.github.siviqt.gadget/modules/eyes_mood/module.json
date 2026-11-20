@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "eyes_mood",
+  "name": "Eyes",
+  "version": "0.3.3",
+  "sdk": 1,
+  "kind": "face",
+  "face": 3,
+  "startup_preview": true,
+  "executable": "module.elf",
+  "capabilities": ["motion"],
+  "dependencies": [],
+  "update_ms": 20
+}

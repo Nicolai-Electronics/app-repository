@@ -1,0 +1,91 @@
+{
+  "name": "Gadget",
+  "description": "Six workspaces for Tanmatsu",
+  "repository_url": "https://github.com/siviqt/Gadget",
+  "categories": [
+    "system"
+  ],
+  "version": "0.5.0",
+  "icon": {
+    "16x16": "icon16.png",
+    "32x32": "icon32.png",
+    "64x64": "icon64.png"
+  },
+  "author": "siviqt",
+  "license_type": "MIT",
+  "license_file": "LICENSE",
+  "application": [
+    {
+      "targets": [
+        "tanmatsu"
+      ],
+      "revision": 8,
+      "bsp_version": 2,
+      "type": "appfs",
+      "executable": "gadget.bin",
+      "external_only": true,
+      "assets": [
+        {
+          "source_file": "LICENSE",
+          "target_file": "LICENSE"
+        },
+        {
+          "source_file": "modules/clock/module.json",
+          "target_file": "modules/clock/module.json"
+        },
+        {
+          "source_file": "modules/clock/module.elf",
+          "target_file": "modules/clock/module.elf"
+        },
+        {
+          "source_file": "modules/internet_radio/module.json",
+          "target_file": "modules/internet_radio/module.json"
+        },
+        {
+          "source_file": "modules/internet_radio/module.elf",
+          "target_file": "modules/internet_radio/module.elf"
+        },
+        {
+          "source_file": "modules/eyes_mood/module.json",
+          "target_file": "modules/eyes_mood/module.json"
+        },
+        {
+          "source_file": "modules/eyes_mood/module.elf",
+          "target_file": "modules/eyes_mood/module.elf"
+        },
+        {
+          "source_file": "modules/weather/module.json",
+          "target_file": "modules/weather/module.json"
+        },
+        {
+          "source_file": "modules/weather/module.elf",
+          "target_file": "modules/weather/module.elf"
+        },
+        {
+          "source_file": "modules/system_status/module.json",
+          "target_file": "modules/system_status/module.json"
+        },
+        {
+          "source_file": "modules/system_status/module.elf",
+          "target_file": "modules/system_status/module.elf"
+        },
+        {
+          "source_file": "modules/hello_gadget/module.json",
+          "target_file": "modules/hello_gadget/module.json"
+        },
+        {
+          "source_file": "modules/hello_gadget/module.elf",
+          "target_file": "modules/hello_gadget/module.elf"
+        },
+        {
+          "source_file": "modules/pulse_service/module.json",
+          "target_file": "modules/pulse_service/module.json"
+        },
+        {
+          "source_file": "modules/pulse_service/module.elf",
+          "target_file": "modules/pulse_service/module.elf"
+        }
+      ]
+    }
+  ]
+}
