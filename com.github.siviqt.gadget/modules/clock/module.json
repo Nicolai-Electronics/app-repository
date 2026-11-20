@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "clock",
+  "name": "Clock",
+  "version": "0.3.3",
+  "sdk": 1,
+  "kind": "face",
+  "face": 1,
+  "startup_preview": true,
+  "executable": "module.elf",
+  "capabilities": ["time", "storage"],
+  "dependencies": [],
+  "update_ms": 200
+}

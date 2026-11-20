@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "id": "gadget.example.hello",
+  "name": "Hello Gadget",
+  "version": "1.0.2",
+  "sdk": 1,
+  "kind": "face",
+  "face": 5,
+  "startup_preview": true,
+  "executable": "module.elf",
+  "capabilities": [],
+  "dependencies": []
+}

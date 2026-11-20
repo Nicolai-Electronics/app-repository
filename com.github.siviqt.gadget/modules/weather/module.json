@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "weather",
+  "name": "Weather",
+  "version": "0.3.3",
+  "sdk": 1,
+  "kind": "combined",
+  "face": 4,
+  "startup_preview": true,
+  "executable": "module.elf",
+  "capabilities": ["network", "time", "storage"],
+  "dependencies": [],
+  "settings": {
+    "location": "",
+    "refresh_minutes": 15
+  }
+}

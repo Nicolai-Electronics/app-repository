@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "internet_radio",
+  "name": "Radio",
+  "version": "0.3.3",
+  "sdk": 1,
+  "kind": "combined",
+  "face": 2,
+  "startup_preview": true,
+  "executable": "module.elf",
+  "capabilities": ["network", "audio", "storage"],
+  "dependencies": [],
+  "worker_stack": 24576,
+  "settings": {
+    "volume_percent": 60
+  }
+}
