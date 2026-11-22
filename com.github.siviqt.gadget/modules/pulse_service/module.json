@@ -1,0 +1,12 @@
+{
+  "format": 1,
+  "id": "gadget.example.pulse",
+  "name": "Pulse Service",
+  "version": "1.0.0",
+  "sdk": 1,
+  "kind": "service",
+  "executable": "module.elf",
+  "capabilities": ["time"],
+  "dependencies": [],
+  "settings": {"interval_ms": 1000}
+}
