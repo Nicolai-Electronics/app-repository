@@ -2,7 +2,7 @@
   "format": 1,
   "id": "gadget.example.hello",
   "name": "Hello Gadget",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "sdk": 1,
   "kind": "face",
   "face": 5,

@@ -2,7 +2,7 @@
   "format": 1,
   "id": "internet_radio",
   "name": "Radio",
-  "version": "0.3.3",
+  "version": "0.4.2",
   "sdk": 1,
   "kind": "combined",
   "face": 2,
@@ -11,6 +11,7 @@
   "capabilities": ["network", "audio", "storage"],
   "dependencies": [],
   "worker_stack": 24576,
+  "update_ms": 100,
   "settings": {
     "volume_percent": 60
   }
