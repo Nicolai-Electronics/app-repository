@@ -1,6 +1,16 @@
 # Gadget for Tanmatsu
 
-Gadget gives Tanmatsu six switchable workspaces for a clock, internet radio, animated eyes, weather forecasts, a demo, and system status. Radio keeps playing while you use another workspace.
+Gadget 0.6.0 gives Tanmatsu six switchable workspaces for a clock, internet radio, animated eyes, weather forecasts, a demo, and system status. Install it on the SD card. Radio keeps playing while you use another workspace.
+
+## Controls
+
+Press `Space` when the startup guide is ready. Use `Hyper` + `F1`–`F6` to switch workspaces and press `Esc` twice within 850 ms to return to the launcher.
+
+Tap the power button to turn off the display and keyboard backlight while background services continue. Tap it again to resume. Open **System** to see the battery percentage and charging state.
+
+## Internet Radio
+
+Press `Hyper` + `F2` in the default layout, then use the arrows and `Enter` to play a station. Press `F1` to add a direct MP3 stream, `F2` to find stations by name or country, `F5` to save a highlighted preview, or `F6` to remove the highlighted station. Changes to the station list are saved on the SD card.
 
 ## ELF modules
 

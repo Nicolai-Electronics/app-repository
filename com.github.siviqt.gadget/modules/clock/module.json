@@ -2,7 +2,7 @@
   "format": 1,
   "id": "clock",
   "name": "Clock",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "sdk": 1,
   "kind": "face",
   "face": 1,

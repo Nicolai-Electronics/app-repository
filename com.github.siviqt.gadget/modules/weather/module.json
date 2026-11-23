@@ -2,7 +2,7 @@
   "format": 1,
   "id": "weather",
   "name": "Weather",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "sdk": 1,
   "kind": "combined",
   "face": 4,
