@@ -2,12 +2,12 @@
   "format": 1,
   "id": "gadget.system",
   "name": "System",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "sdk": 1,
   "kind": "face",
   "face": 6,
   "executable": "module.elf",
   "capabilities": [],
   "dependencies": [],
-  "update_ms": 1000
+  "update_ms": 5000
 }

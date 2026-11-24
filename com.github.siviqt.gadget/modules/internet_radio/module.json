@@ -2,7 +2,7 @@
   "format": 1,
   "id": "internet_radio",
   "name": "Radio",
-  "version": "0.4.2",
+  "version": "0.5.2",
   "sdk": 1,
   "kind": "combined",
   "face": 2,
