@@ -1,16 +1,18 @@
 # Gadget for Tanmatsu
 
-Gadget 0.6.0 gives Tanmatsu six switchable workspaces for a clock, internet radio, animated eyes, weather forecasts, a demo, and system status. Install it on the SD card. Radio keeps playing while you use another workspace.
+Gadget 0.6.0, SD revision 14, gives Tanmatsu six switchable workspaces for a clock, internet radio, animated eyes, weather forecasts, a demo, and system status. Install it on the SD card. Radio keeps playing while you use another workspace.
 
 ## Controls
 
-Press `Space` when the startup guide is ready. Use `Hyper` + `F1`–`F6` to switch workspaces and press `Esc` twice within 850 ms to return to the launcher.
+Press `Space` when the startup guide is ready. Hold `Hyper` while pressing the colored symbol for a workspace, or tap `Hyper` and press the symbol within two seconds. Press `Esc` twice within 850 ms to return to the launcher.
 
-Tap the power button to turn off the display and keyboard backlight while background services continue. Tap it again to resume. Open **System** to see the battery percentage and charging state.
+Tap the power button to turn off the display and keyboard backlights while background services continue. Tap it again to resume. **System** shows battery, CPU, heap and Wi-Fi status with signal bars beside it. CPU, heap and Wi-Fi refresh every five seconds. Press `Tab` for the network name, signal strength in dBm, assigned IP addresses and Wi-Fi MAC.
 
 ## Internet Radio
 
-Press `Hyper` + `F2` in the default layout, then use the arrows and `Enter` to play a station. Press `F1` to add a direct MP3 stream, `F2` to find stations by name or country, `F5` to save a highlighted preview, or `F6` to remove the highlighted station. Changes to the station list are saved on the SD card.
+Hold `Hyper` and press the orange triangle in the default layout, then use the arrows and `Enter` to play a station. Open Options with the red cross to add a direct MP3 or AAC stream or choose a theme. Use the orange triangle to find stations by name or country. Search looks ahead for playable streams, shows the codec and bitrate when reported, and marks HLS entries **Playback unavailable**.
+
+Press the purple diamond on a search result or `Tab` in Now Playing to see the URL, codec and available bitrate. A rate prefixed with `~` is estimated from decoded audio. Press the cyan clover to save a highlighted preview or Backspace on the player to remove the highlighted station. Station changes are saved on the SD card.
 
 ## ELF modules
 

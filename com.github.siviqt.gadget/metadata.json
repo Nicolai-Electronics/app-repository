@@ -19,7 +19,7 @@
       "targets": [
         "tanmatsu"
       ],
-      "revision": 10,
+      "revision": 14,
       "bsp_version": 2,
       "type": "appfs",
       "executable": "gadget.bin",
