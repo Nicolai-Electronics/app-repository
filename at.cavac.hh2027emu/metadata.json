@@ -1,6 +1,6 @@
 {
-  "name": "HackerHotel 2027",
-  "description": "The HackerHotel 2027 badge, emulated. This app runs the badge's own ledmatrix.bin, unchanged, on an RV32 interpreter, and shows the starfish and its apps on the Tanmatsu's screen.",
+  "name": "HH2027emu",
+  "description": "The HackerHotel 2027 badge Emulator",
   "categories": ["tools"],
   "version": "0.1.0",
   "icon": {
